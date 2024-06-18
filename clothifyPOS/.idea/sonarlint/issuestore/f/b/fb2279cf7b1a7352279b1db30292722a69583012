@@ -1,25 +1,25 @@
 
+—
+java:S1104"\Make RegisterUsername a static final constant or non-public and provide accessors if needed.(œªcJ$300bcea4-7908-4f2d-b2ea-663ac3703ef4
+
+java:S1104"\Make RegisterClickBox a static final constant or non-public and provide accessors if needed.(üò‹àúÿÿÿÿJ$8abb7e23-e085-45e0-8435-ef590beadce4
+š
+java:S1104"YMake RegisterEmail a static final constant or non-public and provide accessors if needed.(å²¼üıÿÿÿÿJ$6169fd22-433e-4c44-83d9-badb61d9a5f0
 
-java:S1104"\Make RegisterUsername a static final constant or non-public and provide accessors if needed.(œªc8…¾‰Û‚2J$99377e2f-6e7b-43f9-a288-676977ad86ec
-¤
-java:S1104"\Make RegisterClickBox a static final constant or non-public and provide accessors if needed.(üò‹àúÿÿÿÿ8·ŠÛ‚2J$0a9d7e54-0327-414b-8973-bba5ffbe82c3
-¡
-java:S1104"YMake RegisterEmail a static final constant or non-public and provide accessors if needed.(å²¼üıÿÿÿÿ8Ÿ¢ŠÛ‚2J$70098ab9-243f-4bd9-a2e6-25ed9bdca66d
-¥
-java:S1104"]Make RegisterFirstPass a static final constant or non-public and provide accessors if needed.(©øñÚùÿÿÿÿ8¶»ŠÛ‚2J$9264e57b-c988-44f1-8aac-bb855e294dd4
-¦
-java:S1104"^Make RegisterSecondPass a static final constant or non-public and provide accessors if needed.(úşà‘üÿÿÿÿ8¹ÜŠÛ‚2J$102ac5fe-45bb-4bfa-93e3-21ffa9f60667
-¦
-java:S1104"^Make RegisterBorderPane a static final constant or non-public and provide accessors if needed.(ôÂï¹ùÿÿÿÿ8×æ•á‚2J$ba3341ec-dbff-4a5b-b8ad-80f32e6dd9f6
-œ	java:S116"[Rename this field "RegisterUsername" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œªc8š¾‰Û‚2J$28b35168-8466-4634-8b7f-b607f65dae82
-¢	java:S116"[Rename this field "RegisterClickBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üò‹àúÿÿÿÿ8ÆŠÛ‚2J$27a34b77-b640-4e0e-a210-abbf7ca9baba
-Ÿ	java:S116"XRename this field "RegisterEmail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å²¼üıÿÿÿÿ8©¢ŠÛ‚2J$ca6826d8-1eb3-4257-9222-8b5036f8ae4d
-£	java:S116"\Rename this field "RegisterFirstPass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©øñÚùÿÿÿÿ8È»ŠÛ‚2J$e1420436-7442-4028-be40-264bc3394119
-¤	java:S116"]Rename this field "RegisterSecondPass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úşà‘üÿÿÿÿ8ÎÜŠÛ‚2J$2f4265f1-677c-489d-9638-ff421b2ba935
-¤	java:S116"]Rename this field "RegisterBorderPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÂï¹ùÿÿÿÿ8âæ•á‚2J$839759ac-5b14-4e51-8b59-294b1ddbac9e
-É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úà„Úûÿÿÿÿ8ÚØˆÛ‚2J$e23635cb-b297-44b4-bf88-5bc848577904
-•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úà„Úûÿÿÿÿ8àØˆÛ‚2J$b8388b57-1302-443e-bc05-84cd5a5c0d0f
-	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ê˜28×Í’á‚2J$6557eac1-6d3e-437c-850b-667279f5c5c4
-s
-java:S1172"1Remove this unused method parameter "mouseEvent".(¸Ê˜28ò¹–á‚2J$d88d77af-93e9-413b-bfc8-8604bf18f551
+java:S1104"]Make RegisterFirstPass a static final constant or non-public and provide accessors if needed.(©øñÚùÿÿÿÿJ$8081374a-d6f0-42ad-b11f-97efbabd68a5
+Ÿ
+java:S1104"^Make RegisterSecondPass a static final constant or non-public and provide accessors if needed.(úşà‘üÿÿÿÿJ$d7d7aa61-88ce-4d13-ac05-4f1f8d706140
+Ÿ
+java:S1104"^Make RegisterBorderPane a static final constant or non-public and provide accessors if needed.(ôÂï¹ùÿÿÿÿJ$6a53b64d-bd0d-45b7-aec7-812bfa48a833
+•	java:S116"[Rename this field "RegisterUsername" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œªcJ$dd468fe5-d4e8-4212-bb93-0a0efc4a28d2
+›	java:S116"[Rename this field "RegisterClickBox" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üò‹àúÿÿÿÿJ$08003162-d81f-4b6e-b8eb-ff378179e04b
+˜	java:S116"XRename this field "RegisterEmail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å²¼üıÿÿÿÿJ$52f7d708-d027-4e03-8c7c-edfdb154396d
+œ	java:S116"\Rename this field "RegisterFirstPass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©øñÚùÿÿÿÿJ$e2158e8b-ff47-431f-89d5-3c0c76e3c11c
+	java:S116"]Rename this field "RegisterSecondPass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úşà‘üÿÿÿÿJ$69da6daf-27c5-4699-83a9-b46e9fa10abd
+	java:S116"]Rename this field "RegisterBorderPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÂï¹ùÿÿÿÿJ$574dc6ee-7b8d-4a87-ad4b-011c2b7056ec
+Â
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úà„ÚûÿÿÿÿJ$61bcc5f9-aa9f-460f-bd18-c750639842b8
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úà„ÚûÿÿÿÿJ$572f1e9d-adf2-44a3-962e-ef464db6bac9
+ˆ	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ê˜2J$6b3a30c9-4231-41e3-9dc0-96a45dcd5051
+l
+java:S1172"1Remove this unused method parameter "mouseEvent".(¸Ê˜2J$79e08608-eb9c-4e1a-be78-bc5e2f23df5d

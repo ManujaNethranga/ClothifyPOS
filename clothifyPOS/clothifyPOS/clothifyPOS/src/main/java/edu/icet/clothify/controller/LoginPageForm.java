@@ -22,9 +22,13 @@ public class LoginPageForm {
         LoginPageBorderPane.setCenter(parent);
     }
 
-    public void RegisterBtn(ActionEvent actionEvent) {
+    public void RegisterBtn(ActionEvent actionEvent) throws IOException {
+        Parent parent = new FXMLLoader(getClass().getResource("/view/AdminDashboardPage.fxml")).load();
+        LoginPageBorderPane.getChildren().clear();
+        LoginPageBorderPane.setCenter(parent);
     }
 
-    public void LoginForgotPass(MouseEvent mouseEvent) {
+    public void LoginForgotPass(MouseEvent mouseEvent) throws IOException {
+
     }
 }

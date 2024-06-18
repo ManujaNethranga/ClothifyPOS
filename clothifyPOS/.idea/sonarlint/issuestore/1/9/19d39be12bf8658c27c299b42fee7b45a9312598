@@ -1,0 +1,8 @@
+
+Ÿ
+java:S1104"\Make EmployeeFormPane a static final constant or non-public and provide accessors if needed.(Ì“Î÷8Íùîç‚2J$9f0ab684-6cfc-413a-b8b9-92f10f96edb1
+	java:S116"[Rename this field "EmployeeFormPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì“Î÷8Öùîç‚2J$7c43a38a-0768-4591-be17-06903bf7338c
+y
+java:S1172"1Remove this unused method parameter "mouseEvent".(º÷şıÿÿÿÿ8Úùîç‚2J$8c40e166-680b-4f22-a043-c0cde1494531
+W
+java:S1128"5Remove this unused import 'javafx.event.ActionEvent'.(î•¯¼ıÿÿÿÿ8äşñç‚2

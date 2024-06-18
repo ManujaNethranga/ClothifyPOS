@@ -1,3 +1,25 @@
 
-_
-java:S2094"BRemove this empty class, write its code or make it an "interface".(î†²¹8‹ë¼ã‚2
+ 
+java:S1104"^Make AdminDashboardPane a static final constant or non-public and provide accessors if needed.(Ñ“Ş8µä¯ç‚2J$6f62d1c5-c677-48e0-9340-9d98159aad58
+	java:S116"]Rename this field "AdminDashboardPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ“Ş8Îä¯ç‚2J$5dc71376-05a8-451f-982a-9a205d3f00b2
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(í€—úÿÿÿÿ8—™ùç‚2J$7f0ff719-1c85-4ea3-8bd5-9a904c786383
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ûÏëÛúÿÿÿÿ8—™ùç‚2J$67e8d12f-65cc-4704-ae8b-801e5439d848
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ô·Í8—™ùç‚2J$beec00ef-5e76-454c-a9ee-67abd48319f2
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½ûĞô8˜™ùç‚2J$6f22f576-661f-42f1-861d-0b452acc5c2c
+É
+java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÖŸ¦•ûÿÿÿÿ8˜™ùç‚2J$0d728813-1318-4c58-a28f-c2ab5360757a
+Ä
+java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŒŠ®Õ8™™ùç‚2J$076e8f6c-0d25-4476-ad9a-7a724be033f0
+É
+java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö·ş¾ûÿÿÿÿ8™™ùç‚2J$db6ccb90-085a-417d-b8c6-bb8f3160afd2
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úûà8Ÿ™ùç‚2J$f3a2ae9e-09ea-4221-a86c-b3c3f75df3de
+u
+java:S1172"2Remove this unused method parameter "actionEvent".(úûà8¡™ùç‚2J$8d6999d7-af6a-4192-80ed-8f0d61e5a118
+•	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖŸ¦•ûÿÿÿÿ8¬™ùç‚2J$cd358afd-7172-4fe7-a73b-87eb4bef99e4
+•	java:S100'"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö·ş¾ûÿÿÿÿ8­™ùç‚2J$3d6a7ac1-1de3-4c1d-aabb-010efb5e73dc
+t
+java:S1172*"1Remove this unused method parameter "mouseEvent".(Ÿ¬úŸ8şœúç‚2J$c1d891d0-a6ad-4393-9da4-ce72639ad65b
