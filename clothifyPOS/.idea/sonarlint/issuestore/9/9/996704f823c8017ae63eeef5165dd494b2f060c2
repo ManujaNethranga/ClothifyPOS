@@ -1,0 +1,10 @@
+
+†
+java:S1104"]Make WelcomeBorderPane a static final constant or non-public and provide accessors if needed.(Ўеб√8 у√јВ2J$61979a1d-fd4b-44cc-a596-0453f96f9e59
+Ю	java:S116"\Rename this field "WelcomeBorderPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ўеб√8ду√јВ2J$9ef5b891-1cc5-4cad-a948-5706a252e260
+Х	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ф«≤лы€€€€8иу√јВ2J$21fb6bf1-df0f-4414-8824-7049f4824217
+z
+java:S1172"2Remove this unused method parameter "actionEvent".(ф«≤лы€€€€8ку√јВ2J$c9e8017a-2ec1-463a-8051-c741b79681e4
+Р	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Бий±8су√јВ2J$9691f2a1-a26b-4b9a-ba2c-04f43abadefb
+u
+java:S1172"2Remove this unused method parameter "actionEvent".(Бий±8сњ≈јВ2J$6b2ebb03-9288-45e7-a068-ce05accb6927
