@@ -1,19 +1,0 @@
-
-™
-java:S1104"XMake txtLoginPass a static final constant or non-public and provide accessors if needed.(ê« «ûÿÿÿÿJ$b417db4c-0eb1-4ea8-a40c-c45f9ba2bbf5
-•
-java:S1104"YMake txtLoginEmail a static final constant or non-public and provide accessors if needed.(ÍŒ¾¬J$6ea168e9-522b-4541-b787-03a9484f69a2
-™
-java:S1104"XMake btnLoginPage a static final constant or non-public and provide accessors if needed.(†ôùúÿÿÿÿJ$53a28d80-cd20-4617-8d1e-b0bbb483d096
- 
-java:S1104"_Make LoginPageBorderPane a static final constant or non-public and provide accessors if needed.(Ú—áÑùÿÿÿÿJ$d065f0c2-a834-43f8-ab1a-764d26290d24
-	java:S116"^Rename this field "LoginPageBorderPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú—áÑùÿÿÿÿJ$ef984652-b649-4eb6-a774-112e8daedc86
-Â
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úà„ÚûÿÿÿÿJ$47961a76-5fd7-4d40-910b-fe3465173f33
-½
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(óê¥‡J$1e13cb41-bd27-45ec-9048-58b4e93e43f1
-‰	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á»¿·J$c42001a5-cdde-4602-83f4-6b2936c619cf
-m
-java:S1172"1Remove this unused method parameter "mouseEvent".(Á»¿·J$ed8b9278-aada-46a7-a688-c558dac08bc1
-	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úà„ÚûÿÿÿÿJ$e4d3acd7-6a86-4ea3-b94e-5599a94efad5
-‰	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óê¥‡J$2b93853c-eda8-4b51-80f5-c629bc8ed103

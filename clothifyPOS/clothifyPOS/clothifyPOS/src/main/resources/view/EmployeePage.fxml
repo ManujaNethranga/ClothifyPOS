@@ -13,7 +13,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <BorderPane fx:id="EmployeeFormPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.clothify.controller.EmployeePageForm">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
@@ -22,7 +21,7 @@
                <content>
                   <Pane prefHeight="1080.0" prefWidth="1920.0">
                      <children>
-                        <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="18.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="-45.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/bgImg.png" />
                            </image>
@@ -48,102 +47,92 @@
                               </ImageView>
                            </children>
                         </Group>
-                        <TextField layoutX="95.0" layoutY="202.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtFirstName" layoutX="95.0" layoutY="203.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <TextField layoutX="507.0" layoutY="202.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtLastName" layoutX="507.0" layoutY="203.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <Text fill="WHITE" layoutX="112.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                        <Text fill="WHITE" layoutX="112.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="522.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                        <Text fill="WHITE" layoutX="522.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="112.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                        <Text fill="WHITE" layoutX="112.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="95.0" layoutY="312.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtAddress" layoutX="95.0" layoutY="313.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <TextField layoutX="100.0" layoutY="423.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtFixedLine" layoutX="100.0" layoutY="424.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <Text fill="WHITE" layoutX="117.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixed Line">
+                        <Text fill="WHITE" layoutX="117.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixed Line">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="505.0" layoutY="424.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtMobileNumber" layoutX="505.0" layoutY="425.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <Text fill="WHITE" layoutX="522.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number">
+                        <Text fill="WHITE" layoutX="522.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile Number">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="116.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                        <Text fill="WHITE" layoutX="116.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="99.0" layoutY="540.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtEmail" layoutX="99.0" layoutY="541.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <Text fill="WHITE" layoutX="117.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Position">
+                        <Text fill="WHITE" layoutX="117.0" layoutY="636.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Position">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="100.0" layoutY="651.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtJobPosition" layoutX="100.0" layoutY="652.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <Text fill="WHITE" layoutX="118.0" layoutY="743.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
+                        <Text fill="WHITE" layoutX="118.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="101.0" layoutY="759.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="txtSalary" layoutX="101.0" layoutY="760.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <Text fill="WHITE" layoutX="119.0" layoutY="852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join Date">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Text>
-                        <TextField layoutX="102.0" layoutY="868.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </TextField>
-                        <Button layoutX="103.0" layoutY="958.0" mnemonicParsing="false" opacity="0.71" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px; -fx-background-color: #404040;" text="Submit" textFill="WHITE">
+                        <Button layoutX="103.0" layoutY="954.0" mnemonicParsing="false" onAction="#btnSubmitEmployeeManagement" opacity="0.71" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px; -fx-background-color: #404040;" text="Submit" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <TextField editable="false" layoutX="1011.0" layoutY="312.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewFirstName" layoutX="1011.0" layoutY="312.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -153,7 +142,7 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField editable="false" layoutX="1416.0" layoutY="313.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewLastName" layoutX="1416.0" layoutY="313.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -168,17 +157,17 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField editable="false" layoutX="1010.0" layoutY="422.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewAddress" layoutX="1010.0" layoutY="422.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="1018.0" layoutY="955.0" mnemonicParsing="false" opacity="0.71" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px; -fx-background-color: #404040;" text="View All Employees" textFill="WHITE">
+                        <Button layoutX="1018.0" layoutY="955.0" mnemonicParsing="false" onAction="#btnViewAllEmployees" opacity="0.71" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px; -fx-background-color: #404040;" text="View All Employees" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <TextField layoutX="1005.0" layoutY="202.0" opacity="0.51" prefHeight="49.0" prefWidth="674.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewEmployeeId" layoutX="1005.0" layoutY="202.0" opacity="0.51" prefHeight="49.0" prefWidth="674.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -188,7 +177,7 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField editable="false" layoutX="1012.0" layoutY="538.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewFixedLine" layoutX="1012.0" layoutY="538.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -198,7 +187,7 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField editable="false" layoutX="1417.0" layoutY="539.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewMobileNumber" layoutX="1417.0" layoutY="539.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -208,7 +197,7 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField editable="false" layoutX="1013.0" layoutY="649.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewEmail" layoutX="1013.0" layoutY="649.0" opacity="0.51" prefHeight="49.0" prefWidth="793.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -218,17 +207,7 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField editable="false" layoutX="1418.0" layoutY="650.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </TextField>
-                        <Text fill="WHITE" layoutX="1435.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join Date">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Text>
-                        <TextField editable="false" layoutX="1018.0" layoutY="758.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewSalary" layoutX="1018.0" layoutY="758.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -238,7 +217,7 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <TextField editable="false" layoutX="1423.0" layoutY="759.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
+                        <TextField fx:id="viewJobPosition" layoutX="1423.0" layoutY="759.0" opacity="0.51" prefHeight="49.0" prefWidth="389.0" style="-fx-background-radius: 25px;">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -248,7 +227,7 @@
                               <Font size="20.0" />
                            </font>
                         </Text>
-                        <Button layoutX="1016.0" layoutY="866.0" mnemonicParsing="false" opacity="0.71" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px; -fx-background-color: #404040;" text="Update" textFill="WHITE">
+                        <Button layoutX="1016.0" layoutY="866.0" mnemonicParsing="false" onAction="#btnUpdate" opacity="0.71" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px; -fx-background-color: #404040;" text="Update" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -258,11 +237,21 @@
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="1735.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="1735.0" layoutY="207.0" onMouseClicked="#btnSearch" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/Group%2055.png" />
                            </image>
                         </ImageView>
+                        <Text fill="WHITE" layoutX="120.0" layoutY="850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee ID">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtEmployeeId" editable="false" layoutX="103.0" layoutY="866.0" opacity="0.51" prefHeight="49.0" prefWidth="801.0" style="-fx-background-radius: 25px;">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
                      </children>
                   </Pane>
                </content>

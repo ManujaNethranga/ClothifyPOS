@@ -1,8 +1,50 @@
 
 Ÿ
-java:S1104"\Make EmployeeFormPane a static final constant or non-public and provide accessors if needed.(Ì“Î÷8Íùîç‚2J$9f0ab684-6cfc-413a-b8b9-92f10f96edb1
-	java:S116"[Rename this field "EmployeeFormPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì“Î÷8Öùîç‚2J$7c43a38a-0768-4591-be17-06903bf7338c
+java:S1104"\Make EmployeeFormPane a static final constant or non-public and provide accessors if needed.(Ì“Î÷8ú®’ƒ2J$c7af6673-fdf6-4d85-b9f9-de17b80c5f58
+˜
+java:S1104"UMake txtSalary a static final constant or non-public and provide accessors if needed.(¥à¯¡8ú®’ƒ2J$78c56df6-bc05-4863-84a4-5c616eb5da38
+
+java:S1104"ZMake txtJobPosition a static final constant or non-public and provide accessors if needed.(òá×±8ú®’ƒ2J$baffdba0-a75a-4615-b428-1e4ccc66275d
+œ
+java:S1104"TMake txtEmail a static final constant or non-public and provide accessors if needed.(„Å«ıÿÿÿÿ8ú®’ƒ2J$6cd78505-42cf-4ffd-b5fb-da9cab99f03c
+
+java:S1104"[Make txtMobileNumber a static final constant or non-public and provide accessors if needed.(±¹´Ğ8ú®’ƒ2J$a4f6970f-bc9e-4ef9-96e4-6c7832238b47
+ 
+java:S1104"XMake txtFixedLine a static final constant or non-public and provide accessors if needed.(Á™ªûÿÿÿÿ8ú®’ƒ2J$d6e6515d-2639-43ef-a5fc-9fcafe2e7f05
+
+java:S1104 "VMake txtAddress a static final constant or non-public and provide accessors if needed.(ºåıÿÿÿÿ8ú®’ƒ2J$a3250a49-b868-4558-b016-4b4a81b21ce7
+š
+java:S1104!"WMake txtLastName a static final constant or non-public and provide accessors if needed.(Ğ…Áó8ú®’ƒ2J$c6256d81-c37f-4de0-a03f-66fa5cce3775
+ 
+java:S1104""XMake txtFirstName a static final constant or non-public and provide accessors if needed.(—Àµ‹úÿÿÿÿ8ú®’ƒ2J$e00ae8b3-6f30-469e-b6c2-2397430e8991
+¡
+java:S1104#"YMake txtEmployeeId a static final constant or non-public and provide accessors if needed.(ò¯”¬úÿÿÿÿ8ú®’ƒ2J$1c2eb93c-94da-40ce-8636-f735d8b90173
+£
+java:S1104$"[Make viewJobPosition a static final constant or non-public and provide accessors if needed.(Œ³µ×ûÿÿÿÿ8ú®’ƒ2J$c5085d44-fc97-42e5-9675-7ec013cbcd76
+
+java:S1104%"VMake viewSalary a static final constant or non-public and provide accessors if needed.(ÿïÍşÿÿÿÿ8ú®’ƒ2J$f4e3bf29-9f9e-4599-8a8d-c852f42a343d
+˜
+java:S1104&"UMake viewEmail a static final constant or non-public and provide accessors if needed.(áĞà¼8ú®’ƒ2J$fefbd449-1c02-49cf-a8d7-2c6c1d4a447c
+Ÿ
+java:S1104'"\Make viewMobileNumber a static final constant or non-public and provide accessors if needed.(ş™²8ú®’ƒ2J$87c3c3b0-b6bc-4fbb-9b82-2c165749b437
+œ
+java:S1104("YMake viewFixedLine a static final constant or non-public and provide accessors if needed.(—ÔÁË8ú®’ƒ2J$aa53800c-37fc-41f3-a774-931bf88edc93
+
+java:S1104)"ZMake viewEmployeeId a static final constant or non-public and provide accessors if needed.(­Øˆ°8ú®’ƒ2J$57e667b7-ebb7-43a0-9238-0d66e90abe0b
+Ÿ
+java:S1104*"WMake viewAddress a static final constant or non-public and provide accessors if needed.(ËÄùúûÿÿÿÿ8ú®’ƒ2J$f85f59a0-19d8-4d2d-92e5-fa6ec15f4a0b
+ 
+java:S1104+"XMake viewLastName a static final constant or non-public and provide accessors if needed.(°Ëá†úÿÿÿÿ8ú®’ƒ2J$abb83de2-6fc7-4131-b413-a0b049ae5531
+œ
+java:S1104,"YMake viewFirstName a static final constant or non-public and provide accessors if needed.(³”™Å8ú®’ƒ2J$3f62e819-c2b2-4bdc-b8ac-52318564dd8b
+
+java:S11040"UMake btnUpdate a static final constant or non-public and provide accessors if needed.(”ƒ³Šÿÿÿÿÿ8ú®’ƒ2J$5c42c3c2-0260-4b0d-8e05-35225f7c72d7
+	java:S116"[Rename this field "EmployeeFormPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì“Î÷8ºú®’ƒ2J$5899e137-2a81-410c-8884-36746be61ba3
+Ä
+java:S1186b"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ô§°8»ú®’ƒ2J$f8be3b87-5b8d-44c7-b91d-ac0d5e8a97b1
 y
-java:S1172"1Remove this unused method parameter "mouseEvent".(º÷şıÿÿÿÿ8Úùîç‚2J$8c40e166-680b-4f22-a043-c0cde1494531
-W
-java:S1128"5Remove this unused import 'javafx.event.ActionEvent'.(î•¯¼ıÿÿÿÿ8äşñç‚2
+java:S11724"1Remove this unused method parameter "mouseEvent".(º÷şıÿÿÿÿ8¾ú®’ƒ2J$56703900-76d5-43d7-8662-78f7d741c1bd
+u
+java:S1172:"2Remove this unused method parameter "actionEvent".(ÊÜ²8Äú®’ƒ2J$441a0488-18fc-436a-b357-bb34002758c1
+t
+java:S1172{"1Remove this unused method parameter "mouseEvent".(Ï¡ÿ8Ìú®’ƒ2J$aa4b26d9-9a55-403e-8a4f-081a97e7e681

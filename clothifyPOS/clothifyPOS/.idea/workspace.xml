@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10e452ed-80ea-4179-b637-70504167ac47" name="Changes" comment="" />
+    <list default="true" id="10e452ed-80ea-4179-b637-70504167ac47" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/1/9/19d39be12bf8658c27c299b42fee7b45a9312598" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/1/9/19d39be12bf8658c27c299b42fee7b45a9312598" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/4/0/4085d704dcbb588cbb261018fe86ad1c571554cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/4/b/4bcdf3309797f827796299ef26d7ea1e9f320c2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/6/8/689f97d43a890380fca57bbc2bc79f24be8e35a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/8/7/8773f9f9742f4a1ad49c29dfc859d8a959ad2844" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/b/7/b767697ffbee15a1fbadcae3c43b8a6d2d874c2b" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/b/7/b767697ffbee15a1fbadcae3c43b8a6d2d874c2b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/c/8/c8de7ac78eb07a2309ba3053586284ad231bf649" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/c/8/c8de7ac78eb07a2309ba3053586284ad231bf649" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/securityhotspotstore/4/0/4085d704dcbb588cbb261018fe86ad1c571554cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/securityhotspotstore/4/b/4bcdf3309797f827796299ef26d7ea1e9f320c2c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/securityhotspotstore/6/8/689f97d43a890380fca57bbc2bc79f24be8e35a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/securityhotspotstore/8/7/8773f9f9742f4a1ad49c29dfc859d8a959ad2844" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/securityhotspotstore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothifyPOS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clothifyPOS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothifyPOS/src/main/java/edu/icet/clothify/controller/EmployeePageForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/clothifyPOS/src/main/java/edu/icet/clothify/controller/EmployeePageForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clothifyPOS/src/main/resources/view/EmployeePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/clothifyPOS/src/main/resources/view/EmployeePage.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2i3AEXcjNu3vtMViuq1bIIw5Pqu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -19,8 +41,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/ICD/Level 3/Final Project/clothifyPOS (2)/clothifyPOS"
+    "last_opened_file_path": "F:/ICD/Level 3/Final Project/Final/clothifyPOS/clothifyPOS"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

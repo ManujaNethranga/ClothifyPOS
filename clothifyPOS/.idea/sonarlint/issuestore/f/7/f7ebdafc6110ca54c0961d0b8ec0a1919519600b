@@ -1,0 +1,10 @@
+
+q
+java:S1121".Extract the assignment out of this expression.(Ó«™ç8 ’¼†ƒ2J$7bf10d0e-e8e9-4b61-b8c4-01d3bfdcf6b0
+
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(ÜŸ•8¡’¼†ƒ2J$9202d5b2-b2d3-46bf-b690-967d6163dc31
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çïü°8£’¼†ƒ2J$b11b1974-0a3a-4f87-a2b1-8ee512d33b71
+á
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(§İüáşÿÿÿÿ8À’¼†ƒ2J$9a1ca848-5597-4293-a56e-3ebf8dd70fec
+_
+java:S1116"Remove this empty statement.(Šœ»˜8Â’¼†ƒ2J$4f1871da-5f60-4d28-8864-3f0fad6c75e2
