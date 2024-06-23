@@ -16,4 +16,6 @@ public interface EmployeeDao extends CrudDao<EmployeeEntity> {
     Boolean updateEmployee(EmployeeEntity map);
 
     List<EmployeeEntity> getAllEmployeeDetails();
+
+    Boolean isEmailExits(String email);
 }

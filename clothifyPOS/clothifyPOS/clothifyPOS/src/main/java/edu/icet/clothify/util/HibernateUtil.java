@@ -2,6 +2,7 @@ package edu.icet.clothify.util;
 
 
 import edu.icet.clothify.entity.EmployeeEntity;
+import edu.icet.clothify.entity.UserEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -21,6 +22,7 @@ public class HibernateUtil {
 
         Metadata metadata = new MetadataSources(build)
                 .addAnnotatedClass(EmployeeEntity.class)
+                .addAnnotatedClass(UserEntity.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();

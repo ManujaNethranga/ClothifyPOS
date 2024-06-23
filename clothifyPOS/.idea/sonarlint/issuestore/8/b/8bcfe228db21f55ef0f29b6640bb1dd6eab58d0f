@@ -1,2 +1,17 @@
 
-	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–³¨£8Τώσ‘ƒ2J$4f2440ec-e6ba-46de-aa4b-50f5eb065bfe
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–³¨£8―’οδƒ2J$c077e876-5e42-4de8-a42d-20d915855bc4
+†
+java:S2583z"CChange this condition so that it does not always evaluate to "true"(³„΅8Ν’οδƒ2J$7e4be5a0-d045-4804-b94f-f62687fbe01e
+t
+java:S1905H"1Remove this unnecessary cast to "EmployeeEntity".( Εό8Ω’οδƒ2J$9cf70c76-62c6-47de-8acd-e5e699f1039d
+v
+java:S1874R".Remove this use of "update"; it is deprecated.(¥·ςΒψÿÿÿÿ8Ϋ’οδƒ2J$b0fda21f-d6bc-4be3-9de1-337825615282
+r	java:S106y"+Replace this use of System.out by a logger.(‚ι€ήϋÿÿÿÿ8ΰ’οδƒ2J$f7aa639b-bc52-49d4-9e30-e645c01c475f
+
+java:S1871|"MThis branch's code block is the same as the block for the branch on line 122.(δ±ΩΈ8α’οδƒ2J$20d9d788-279b-4902-8f66-8f883dbae629
+½
+java:S2159z"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(³„΅8β’οδƒ2J$265ceb16-86d1-4c70-8ab6-13038fa80d25
+v
+java:S1128"3Remove this unused import 'lombok.extern.java.Log'.(Λ΅±μ8δ’οδƒ2J$31a80ee4-15a1-4983-98a2-c8541fd8768f
+ 
+java:S1128	"]Remove this unused import 'org.modelmapper.internal.bytebuddy.implementation.bytecode.Throw'.(¬™δω8δ’οδƒ2J$cc0b9a4e-1a0c-4105-aaeb-a910c1781c57

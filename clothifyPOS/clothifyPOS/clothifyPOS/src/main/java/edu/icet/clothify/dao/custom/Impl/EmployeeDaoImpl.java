@@ -9,6 +9,7 @@ import org.hibernate.Transaction;
 import org.modelmapper.internal.bytebuddy.implementation.bytecode.Throw;
 
 import java.sql.ResultSet;
+import java.sql.SQLSyntaxErrorException;
 import java.sql.Statement;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -33,6 +34,9 @@ public class EmployeeDaoImpl implements EmployeeDao {
                 ResultSet resultSet = statement.executeQuery("SELECT COUNT(*)AS row_count FROM employeemanagement");
                 resultSet.next();
                 count.set(resultSet.getInt("row_count"));
+            }catch(SQLSyntaxErrorException e){
+                count.set(0);
+                throw e;
             }
         });
         return count.get();
@@ -97,6 +101,30 @@ public class EmployeeDaoImpl implements EmployeeDao {
             session.close();
         }
         return list;
+    }
+
+    @Override
+    public Boolean isEmailExits(String email) {
+        Session session = HibernateUtil.getSession();
+        Transaction ts = null;
+        String value = "";
+        try{
+            ts = session.beginTransaction();
+            value = String.valueOf(session.createQuery(" SELECT id FROM EmployeeEntity WHERE email=:email", EmployeeEntity.class));
+            ts.commit();
+        }catch(Exception e){
+            if(ts!=null)ts.rollback();
+            throw e;
+        }finally {
+            session.close();
+        }
+        System.out.println(value);
+        if(!value.equals(null)){
+            return true;
+        } else if (!value.equals("")) {
+            return true;
+        }
+        return false;
     }
 
 

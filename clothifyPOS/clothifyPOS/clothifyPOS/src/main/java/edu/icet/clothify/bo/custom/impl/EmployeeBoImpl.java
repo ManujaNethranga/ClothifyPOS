@@ -51,4 +51,9 @@ public class EmployeeBoImpl implements EmployeeBo {
         });
         return list;
     }
+
+    @Override
+    public Boolean isEmailExits(String email) {
+        return employeeDao.isEmailExits(email);
+    }
 }

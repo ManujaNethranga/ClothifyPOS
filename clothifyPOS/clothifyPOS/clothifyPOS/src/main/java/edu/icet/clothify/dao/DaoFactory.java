@@ -1,6 +1,7 @@
 package edu.icet.clothify.dao;
 
 import edu.icet.clothify.dao.custom.Impl.EmployeeDaoImpl;
+import edu.icet.clothify.dao.custom.Impl.UserDaoImpl;
 import edu.icet.clothify.util.DaoType;
 
 public class DaoFactory {
@@ -15,6 +16,7 @@ public class DaoFactory {
     public <T extends SuperDao>T getDao(DaoType type){
         switch(type){
             case EMPLOYEE: return (T) new EmployeeDaoImpl();
+            case USER: return (T) new UserDaoImpl();
         }
         return null;
     }

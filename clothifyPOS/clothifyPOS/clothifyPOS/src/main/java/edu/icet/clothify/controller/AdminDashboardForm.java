@@ -24,13 +24,19 @@ public class AdminDashboardForm {
     public void btnSales(ActionEvent actionEvent) {
     }
 
-    public void btnReports(ActionEvent actionEvent) {
+    public void btnReports(ActionEvent actionEvent) throws IOException {
+        Parent parent = new FXMLLoader(getClass().getResource("/view/GenerateReports.fxml")).load();
+        AdminDashboardPane.getChildren().clear();
+        AdminDashboardPane.setCenter(parent);
     }
 
     public void btnQuotation(ActionEvent actionEvent) {
     }
 
-    public void BtnInventory(ActionEvent actionEvent) {
+    public void BtnInventory(ActionEvent actionEvent) throws IOException {
+        Parent parent = new FXMLLoader(getClass().getResource("/view/inventoryManagement.fxml")).load();
+        AdminDashboardPane.getChildren().clear();
+        AdminDashboardPane.setCenter(parent);
     }
 
     public void btnSetting(ActionEvent actionEvent) {

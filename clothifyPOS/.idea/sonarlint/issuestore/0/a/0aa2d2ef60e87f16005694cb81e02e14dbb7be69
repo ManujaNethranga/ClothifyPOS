@@ -1,0 +1,28 @@
+
+§
+java:S1104"_Make GenerateReportsPane a static final constant or non-public and provide accessors if needed.(’ãªĞøÿÿÿÿ8ê×ï„2J$773a6773-15cf-4891-822b-485cf9977d48
+¥	java:S116"^Rename this field "GenerateReportsPane" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ãªĞøÿÿÿÿ8ï×ï„2J$c7c9486a-7817-4e8b-b984-4fc4b4256dc2
+Ã
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹‚´o8Éü„2J$dcbf1c7c-8010-4a25-b6d9-18ec83c40ee8
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(è®•ä8Ëöü„2J$4df19ffa-a51f-415e-b1fc-f32d22f98fc6
+Ã
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Š¤¡X8é¥ı„2J$3bf8c8b2-ca78-4fb9-9c49-a66088a1d430
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(åı•ºÿÿÿÿÿ8³Óı„2J$4cd092e2-3500-40bf-9208-8130ae581bf7
+Ä
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿ÀÙ˜8ëúı„2J$c7a1ee70-98a2-4619-9ebc-00d6005cd5ff
+É
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÎñŒûÿÿÿÿ8–šş„2J$cfe4b9eb-465f-40da-b515-14439b777e91
+Ä
+java:S1186&"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ş‚°œ8ıºş„2J$f7249606-0ac1-4544-b7f8-315feaef966f
+Ä
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²Ìš´8½èş„2J$e53600c1-8f88-477f-b423-6ff32f0acfa6
+É
+java:S1186,"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ü„Ò¢ùÿÿÿÿ8ƒˆÿ„2J$ca2f0875-8c91-4dc0-8fbd-4834c14f93f0
+Ã
+java:S1186/"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜œ8’·ÿ„2J$3703544f-6844-4c8b-bc3c-48843826067c
+£
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.( ¶‘şÿÿÿÿ8Ááÿ„2
+t
+java:S1172"1Remove this unused method parameter "mouseEvent".(ñ¼“¨8ò×ï„2J$823b9539-c79a-4e74-8c6f-7bc60736f969

@@ -16,4 +16,6 @@ public interface EmployeeBo extends SuperBo {
     Boolean updateEmployee(Employee employee);
 
     ObservableList<Employee> getAllEmployeeDetails();
+
+    Boolean isEmailExits(String email);
 }
