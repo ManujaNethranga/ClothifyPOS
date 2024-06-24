@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
@@ -25,7 +26,6 @@ import java.util.regex.Pattern;
 public class EmployeePageForm implements Initializable {
     public BorderPane EmployeeFormPane;
     public TextField txtSalary;
-    public TextField txtJobPosition;
     public TextField txtEmail;
     public TextField txtMobileNumber;
     public TextField txtFixedLine;
@@ -42,12 +42,11 @@ public class EmployeePageForm implements Initializable {
     public TextField viewAddress;
     public TextField viewLastName;
     public TextField viewFirstName;
-    public Button btnUpdate;
 
 
     private final EmployeeBo employeeBo = BoFactory.getInstance().getBo(BoType.EMPLOYEE);
-
-
+    public ComboBox cmbJobPosition;
+    public ComboBox cmbJobPositionReg;
 
 
     public void btnEmployeeExit(MouseEvent mouseEvent) throws IOException {
@@ -66,8 +65,9 @@ public class EmployeePageForm implements Initializable {
                 txtFixedLine.getText(),
                 txtMobileNumber.getText(),
                 Double.parseDouble(txtSalary.getText()),
-                txtJobPosition.getText(),
-                getLocalDate()
+                cmbJobPositionReg.getValue().toString(),
+                getLocalDate(),
+                true
         );
         boolean b =  employeeBo.saveEmployee(employee);
         if(b){
@@ -86,7 +86,7 @@ public class EmployeePageForm implements Initializable {
         txtFixedLine.clear();
         txtMobileNumber.clear();
         txtSalary.clear();
-        txtJobPosition.clear();
+        cmbJobPositionReg.setValue("");
         generateEmployeeId();
     }
 
@@ -115,6 +115,8 @@ public class EmployeePageForm implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        cmbJobPosition.getItems().addAll("Cashier","Admin","Manager","Clerk");
+        cmbJobPositionReg.getItems().addAll("Cashier","Admin","Manager","Clerk");
         generateEmployeeId();
     }
 
@@ -127,7 +129,7 @@ public class EmployeePageForm implements Initializable {
         viewFixedLine.setText(employee.getFixedNumber());
         viewMobileNumber.setText(employee.getMobileNumber());
         viewSalary.setText(employee.getSalary()+"");
-        viewJobPosition.setText(employee.getPosition());
+        cmbJobPosition.setValue(employee.getPosition());
     }
 
     public void btnUpdate(ActionEvent actionEvent) {
@@ -140,7 +142,7 @@ public class EmployeePageForm implements Initializable {
         employee.setMobileNumber(viewMobileNumber.getText());
         employee.setEmail(viewEmail.getText());
         employee.setSalary(Double.parseDouble(viewSalary.getText()));
-        employee.setPosition(viewJobPosition.getText());
+        employee.setPosition(cmbJobPosition.getValue().toString());
         Boolean b = employeeBo.updateEmployee(employee);
         if (b){
             resetView();
@@ -155,7 +157,7 @@ public class EmployeePageForm implements Initializable {
         viewFixedLine.clear();
         viewMobileNumber.clear();
         viewSalary.clear();
-        viewJobPosition.clear();
+        cmbJobPosition.setValue("");
         viewEmployeeId.clear();
     }
 

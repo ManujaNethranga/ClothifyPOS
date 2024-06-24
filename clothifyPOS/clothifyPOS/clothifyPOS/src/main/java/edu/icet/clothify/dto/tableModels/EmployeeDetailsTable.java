@@ -19,4 +19,5 @@ public class EmployeeDetailsTable {
     private double salary;
     private String jobPosition;
     private String joinDate;
+    private Boolean isActive;
 }

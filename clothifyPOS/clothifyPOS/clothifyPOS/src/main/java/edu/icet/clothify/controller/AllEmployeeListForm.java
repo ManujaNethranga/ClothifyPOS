@@ -32,6 +32,7 @@ public class AllEmployeeListForm implements Initializable {
     public TableColumn colSalary;
     public TableColumn colJobPosition;
     public TableColumn colJoinDate;
+    public TableColumn colIsActive;
 
     EmployeeBo employeeBo = BoFactory.getInstance().getBo(BoType.EMPLOYEE);
 
@@ -52,6 +53,7 @@ public class AllEmployeeListForm implements Initializable {
         colSalary.setCellValueFactory(new PropertyValueFactory<>("salary"));
         colJobPosition.setCellValueFactory(new PropertyValueFactory<>("jobPosition"));
         colJoinDate.setCellValueFactory(new PropertyValueFactory<>("joinDate"));
+        colIsActive.setCellValueFactory(new PropertyValueFactory<>("isActive"));
         LoadEmployeeDetails();
     }
 
@@ -68,7 +70,8 @@ public class AllEmployeeListForm implements Initializable {
                     element.getMobileNumber(),
                     element.getSalary(),
                     element.getPosition(),
-                    element.getJoinDate()
+                    element.getJoinDate(),
+                    element.getIsActive()
             );
             employeeDetailsTables.add(table);
         });

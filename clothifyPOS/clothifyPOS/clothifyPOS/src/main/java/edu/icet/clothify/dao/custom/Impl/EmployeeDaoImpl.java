@@ -31,10 +31,10 @@ public class EmployeeDaoImpl implements EmployeeDao {
         AtomicInteger count = new AtomicInteger();
         session.doWork(connection -> {
             try(Statement statement = connection.createStatement()){
-                ResultSet resultSet = statement.executeQuery("SELECT COUNT(*)AS row_count FROM employeemanagement");
+                ResultSet resultSet = statement.executeQuery("SELECT COUNT(*)AS row_count FROM employeeDetails");
                 resultSet.next();
                 count.set(resultSet.getInt("row_count"));
-            }catch(SQLSyntaxErrorException e){
+            }catch(SQLSyntaxErrorException e) {
                 count.set(0);
                 throw e;
             }

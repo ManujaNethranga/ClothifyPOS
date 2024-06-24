@@ -1,5 +1,6 @@
 package edu.icet.clothify.dto;
 
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,12 +10,12 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class User {
+public class Order {
     private String id;
-    private String userName;
+    private String Name;
     private String email;
-    private String password;
-    private String type;
-    private String regDate;
-    private Boolean isActive;
+    private String paymentType;
+    private String date;
+    private Boolean isReturned;
+
 }

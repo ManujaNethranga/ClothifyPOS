@@ -15,6 +15,7 @@ import java.util.List;
 @Entity
 @Table(name = "subcategoryDetail")
 public class SubCategoryEntity {
+    @Id
     private String id;
     private String name;
     private String regDate;

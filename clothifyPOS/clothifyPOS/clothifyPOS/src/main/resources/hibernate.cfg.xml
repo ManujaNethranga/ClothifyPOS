@@ -17,5 +17,14 @@
 
         <!-- DB schema will be updated if needed -->
         <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="edu.icet.clothify.entity.UserEntity"/>
+        <mapping class="edu.icet.clothify.entity.SubCategoryEntity"/>
+        <mapping class="edu.icet.clothify.entity.ProductEntity"/>
+        <mapping class="edu.icet.clothify.entity.OrderEntity"/>
+        <mapping class="edu.icet.clothify.entity.SupplierEntity"/>
+        <mapping class="edu.icet.clothify.entity.CategoryEntity"/>
+        <mapping class="edu.icet.clothify.entity.OrderDetailsEntity"/>
+
     </session-factory>
 </hibernate-configuration>

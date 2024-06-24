@@ -15,7 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 @ToString
 @Entity
-@Table (name = "EmployeeManagement")
+@Table (name = "EmployeeDetails")
 public class EmployeeEntity {
     @Id
     private String id;
@@ -28,4 +28,5 @@ public class EmployeeEntity {
     private Double salary;
     private String position;
     private String joinDate;
+    private Boolean isActive;
 }

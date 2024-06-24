@@ -75,7 +75,7 @@ public class UserDaoImpl implements UserDao {
             ts.commit();
         }catch(Exception e){
             if(ts!=null)ts.rollback();
-            throw e;
+            return null;
         }finally {
             session.close();
         }

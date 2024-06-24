@@ -1,19 +1,22 @@
 package edu.icet.clothify.entity;
 
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.sql.Blob;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Entity
+@Table(name = "productDetails")
 public class ProductEntity {
+    @Id
     private String id;
     private String name;
     private String description;
@@ -30,4 +33,7 @@ public class ProductEntity {
     @ManyToOne
     @JoinColumn(name = "supplierId")
     SupplierEntity supplierEntity;
+
+    @OneToMany(mappedBy = "productEntity")
+    List<OrderDetailsEntity> list;
 }

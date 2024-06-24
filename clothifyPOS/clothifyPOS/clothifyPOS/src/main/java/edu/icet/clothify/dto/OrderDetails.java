@@ -9,12 +9,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class User {
+public class OrderDetails {
     private String id;
-    private String userName;
-    private String email;
-    private String password;
-    private String type;
-    private String regDate;
-    private Boolean isActive;
+    private Integer quantity;
+
 }

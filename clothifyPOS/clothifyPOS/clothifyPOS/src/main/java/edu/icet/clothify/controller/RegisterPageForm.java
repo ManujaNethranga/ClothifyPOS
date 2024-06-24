@@ -90,7 +90,8 @@ public class RegisterPageForm implements Initializable {
                         email,
                         password,
                         type,
-                        getLocalDate()
+                        getLocalDate(),
+                        true
                 );
                 boolean selected = RegisterClickBox.isSelected();
                 if(selected){

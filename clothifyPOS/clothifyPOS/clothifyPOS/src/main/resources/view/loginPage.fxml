@@ -81,6 +81,11 @@
                               <Font size="15.0" />
                            </font>
                         </PasswordField>
+                        <Text fx:id="DatabaseNull" fill="RED" layoutX="167.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Cambria Bold Italic" size="16.0" />
+                           </font>
+                        </Text>
                      </children>
                   </Pane>
                </content>

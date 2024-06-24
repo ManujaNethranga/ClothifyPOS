@@ -22,4 +22,5 @@ public class Employee {
     private Double salary;
     private String position;
     private String joinDate;
+    private Boolean isActive;
 }
