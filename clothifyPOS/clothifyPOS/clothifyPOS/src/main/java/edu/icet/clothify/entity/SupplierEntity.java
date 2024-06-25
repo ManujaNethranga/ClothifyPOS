@@ -25,7 +25,6 @@ public class SupplierEntity {
     private String contact;
     private String regDate;
     private Boolean isActive;
-    private Blob img;
 
     @OneToMany(mappedBy = "supplierEntity")
     List<ProductEntity> list;

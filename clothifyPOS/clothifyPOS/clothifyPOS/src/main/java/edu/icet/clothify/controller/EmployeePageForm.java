@@ -33,7 +33,6 @@ public class EmployeePageForm implements Initializable {
     public TextField txtLastName;
     public TextField txtFirstName;
     public TextField txtEmployeeId;
-    public TextField viewJobPosition;
     public TextField viewSalary;
     public TextField viewEmail;
     public TextField viewMobileNumber;

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="SupplierPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.clothify.controller.SupplierForm">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="1082.0" prefWidth="1920.0">
+               <content>
+                  <Pane prefHeight="1080.0" prefWidth="1920.0">
+                     <children>
+                        <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bgImg.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="670.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE SUPPLIER" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="65.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtId" editable="false" layoutX="177.0" layoutY="257.0" prefHeight="39.0" prefWidth="291.0" />
+                        <TextField fx:id="txtCompanyName" layoutX="502.0" layoutY="255.0" prefHeight="39.0" prefWidth="291.0" promptText="Company Name" />
+                        <TextField fx:id="txtTitle" layoutX="179.0" layoutY="318.0" prefHeight="39.0" prefWidth="616.0" promptText="Description" />
+                        <TextField fx:id="txtEmail" layoutX="179.0" layoutY="379.0" prefHeight="39.0" prefWidth="616.0" promptText="Email" />
+                        <TextField fx:id="txtContact" layoutX="181.0" layoutY="442.0" prefHeight="39.0" prefWidth="291.0" promptText="Land Number" />
+                        <TextField fx:id="txtContact2" layoutX="504.0" layoutY="442.0" prefHeight="39.0" prefWidth="291.0" promptText="Mobile Number" />
+                        <TextField fx:id="txtAddress" layoutX="180.0" layoutY="507.0" prefHeight="39.0" prefWidth="616.0" promptText="Address" />
+                        <Button layoutX="62.0" layoutY="64.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="51.0" style="-fx-background-color: #282828; -fx-background-radius: 100PX; -fx-border-color: WHITE; -fx-border-radius: 100PX;" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="77.0" layoutY="77.0" onMouseClicked="#btnBack" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Vector.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="181.0" layoutY="565.0" mnemonicParsing="false" onAction="#btnSave" prefHeight="34.0" prefWidth="99.0" text="Save" />
+                        <TextField fx:id="UpdateId" layoutX="1065.0" layoutY="254.0" prefHeight="39.0" prefWidth="207.0" />
+                        <TextField fx:id="updateComapanyName" layoutX="1390.0" layoutY="252.0" prefHeight="39.0" prefWidth="291.0" promptText="Company Name" />
+                        <TextField fx:id="UpdateDescription" layoutX="1067.0" layoutY="315.0" prefHeight="39.0" prefWidth="616.0" promptText="Description" />
+                        <TextField fx:id="UpdateEmail" layoutX="1067.0" layoutY="376.0" prefHeight="39.0" prefWidth="616.0" promptText="Email" />
+                        <TextField fx:id="UpdateLandNumber" layoutX="1069.0" layoutY="439.0" prefHeight="39.0" prefWidth="291.0" promptText="Land Number" />
+                        <TextField fx:id="UpdateAddress" layoutX="1068.0" layoutY="504.0" prefHeight="39.0" prefWidth="616.0" promptText="Address" />
+                        <Button layoutX="1069.0" layoutY="562.0" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="34.0" prefWidth="99.0" text="Update" />
+                        <ComboBox fx:id="UpdateAvailabityCmb" layoutX="1392.0" layoutY="438.0" prefHeight="41.0" prefWidth="287.0" />
+                        <TableView fx:id="SupplierTable" layoutX="179.0" layoutY="638.0" prefHeight="407.0" prefWidth="1503.0">
+                          <columns>
+                            <TableColumn fx:id="colSupplierId" prefWidth="116.66668701171875" text="Supplier ID" />
+                            <TableColumn fx:id="colEmail" prefWidth="224.33331298828125" text="Email" />
+                              <TableColumn fx:id="colCompanyName" prefWidth="195.33331298828125" text="Company Name" />
+                              <TableColumn fx:id="colTitle" prefWidth="291.0" text="Title" />
+                              <TableColumn fx:id="colAddress" prefWidth="273.6666259765625" text="Address" />
+                              <TableColumn fx:id="colContact" prefWidth="169.3333740234375" text="Contact" />
+                              <TableColumn fx:id="colRegisteredDate" minWidth="0.0" prefWidth="115.3333740234375" text="Registered Date" />
+                              <TableColumn fx:id="colIsActive" minWidth="0.0" prefWidth="120.6666259765625" text="is Active" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="1291.0" layoutY="254.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="37.0" prefWidth="71.0" text="Search" />
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

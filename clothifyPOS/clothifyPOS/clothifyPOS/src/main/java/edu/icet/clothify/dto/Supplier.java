@@ -20,6 +20,5 @@ public class Supplier {
     private String contact;
     private String regDate;
     private Boolean isActive;
-    private Blob img;
 
 }
