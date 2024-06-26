@@ -16,7 +16,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class CategoryDaoImpl implements CategoryDao {
     @Override
     public boolean save(CategoryEntity entity) {
-        return false;
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        session.persist(entity);
+        session.getTransaction().commit();
+        session.close();
+        return true;
     }
 
     @Override
@@ -55,5 +60,43 @@ public class CategoryDaoImpl implements CategoryDao {
             session.close();
         }
         return lastId;
+    }
+
+    @Override
+    public CategoryEntity getById(String id) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        CategoryEntity categoryEntity = (CategoryEntity) session.get(CategoryEntity.class,id.toUpperCase());
+        session.getTransaction().commit();
+        session.close();
+        return categoryEntity;
+    }
+
+    @Override
+    public Boolean update(CategoryEntity entity) {
+        Session session= HibernateUtil.getSession();
+        session.getTransaction().begin();
+        session.update(entity);
+        session.getTransaction().commit();
+        session.close();
+        return true;
+    }
+
+    @Override
+    public List<CategoryEntity> getAllCategories() {
+        Session session = HibernateUtil.getSession();
+        Transaction ts = null;
+        List<CategoryEntity> list;
+        try{
+            ts = session.beginTransaction();
+            list = session.createQuery("SELECT a FROM CategoryEntity a",CategoryEntity.class).getResultList();
+            ts.commit();
+        }catch(Exception e){
+            if(ts!=null)ts.rollback();
+            throw e;
+        }finally {
+            session.close();
+        }
+        return list;
     }
 }

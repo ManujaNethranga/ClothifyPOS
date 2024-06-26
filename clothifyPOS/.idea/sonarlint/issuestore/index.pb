@@ -127,3 +127,7 @@ ZclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/impl/Category
 \clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/Impl/CategoryDaoImpl.java,7\c\7cdebf98b626e59456135d229599496740bfc7cf
 ƒ
 SclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/CategoryDao.java,7\b\7b16f6a467297bcd50eea44787499d945e308863
+”
+dclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/CategoryParentDetailTbl.java,7\d\7da1c904d737f8abd34f3eecf21719809f88a131
+‘
+aclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/CategorySubDetailTbl.java,a\4\a46ba92d2ba4736b0a0159ece3c2de447457c459

@@ -69,7 +69,7 @@
                               <TableColumn fx:id="colParentIsActive" prefWidth="88.66668701171875" text="is Active" />
                            </columns>
                         </TableView>
-                        <TextField fx:id="txtParentCategoryIDSearch" editable="false" layoutX="265.0" layoutY="493.0" prefHeight="37.0" prefWidth="371.0" />
+                        <TextField fx:id="txtParentCategoryIDSearch" layoutX="265.0" layoutY="493.0" prefHeight="37.0" prefWidth="371.0" promptText="Category ID" />
                         <TextField fx:id="txtEditParentName" layoutX="266.0" layoutY="546.0" prefHeight="37.0" prefWidth="369.0" promptText="Category Name">
                            <font>
                               <Font size="15.0" />
@@ -85,7 +85,7 @@
                               <Font size="18.0" />
                            </font>
                         </Button>
-                        <ComboBox fx:id="txtEditParentIsActive" layoutX="649.0" layoutY="547.0" prefHeight="37.0" prefWidth="283.0" promptText="Availability" />
+                        <ComboBox fx:id="cmbEditParentIsActive" layoutX="649.0" layoutY="547.0" prefHeight="37.0" prefWidth="283.0" promptText="Availability" />
                         <Button layoutX="649.0" layoutY="493.0" mnemonicParsing="false" onAction="#btnParentSearch" prefHeight="37.0" prefWidth="133.0" text="Search">
                            <font>
                               <Font size="15.0" />
