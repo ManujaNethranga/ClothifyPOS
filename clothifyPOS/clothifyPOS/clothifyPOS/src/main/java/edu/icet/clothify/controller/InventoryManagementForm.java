@@ -26,7 +26,10 @@ public class InventoryManagementForm {
     public void btnManageSubCategory(ActionEvent actionEvent) {
     }
 
-    public void btnManageCategories(ActionEvent actionEvent) {
+    public void btnManageCategories(ActionEvent actionEvent) throws IOException {
+        Parent parent = new FXMLLoader(getClass().getResource("/view/categoryPage.fxml")).load();
+        inventoryManagementPane.getChildren().clear();
+        inventoryManagementPane.setCenter(parent);
     }
 
     public void btnManageSuppliers(ActionEvent actionEvent) throws IOException {

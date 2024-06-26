@@ -12,6 +12,7 @@ import lombok.ToString;
 public class SubCategory {
     private String id;
     private String name;
+    private String description;
     private String regDate;
     private Boolean isActive;
 

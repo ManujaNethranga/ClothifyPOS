@@ -18,8 +18,10 @@ public class SubCategoryEntity {
     @Id
     private String id;
     private String name;
+    private String description;
     private String regDate;
     private Boolean isActive;
+
 
     @ManyToOne
     @JoinColumn(name = "categoryId")

@@ -1,6 +1,6 @@
 package edu.icet.clothify.util;
 
 public enum DaoType {
-    EMPLOYEE,USER,SUPPLIER
+    EMPLOYEE,USER,SUPPLIER,CATEGORY
 
 }
