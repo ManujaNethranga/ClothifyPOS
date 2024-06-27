@@ -15,7 +15,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <BorderPane fx:id="CategoryBorderPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.clothify.controller.CategoryForm">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
@@ -126,22 +125,22 @@
                               <Font size="15.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="1003.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnSubSave" prefHeight="30.0" prefWidth="514.0" text="Save">
+                        <Button layoutX="1003.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnSubSave" prefHeight="38.0" prefWidth="514.0" text="Save">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Button>
                         <TableView fx:id="SubCategoryTable" layoutX="1007.0" layoutY="731.0" prefHeight="285.0" prefWidth="666.0">
                            <columns>
-                              <TableColumn fx:id="colSubId" prefWidth="86.3333740234375" text="Category ID" />
-                              <TableColumn fx:id="colSubSubId" prefWidth="81.6666259765625" text="Sub - ID" />
-                              <TableColumn fx:id="colSubName" prefWidth="129.666748046875" text="Name" />
-                              <TableColumn fx:id="colSubDescription" prefWidth="197.3333740234375" text="Description" />
+                              <TableColumn fx:id="colSubId" prefWidth="106.0" text="Sub Categoty ID" />
+                              <TableColumn fx:id="colSubSubId" prefWidth="91.0" text="Category ID" />
+                              <TableColumn fx:id="colSubName" prefWidth="131.0" text="Name" />
+                              <TableColumn fx:id="colSubDescription" prefWidth="169.0" text="Description" />
                               <TableColumn fx:id="colSubRegDate" prefWidth="82.3333740234375" text="Reg Date" />
                               <TableColumn fx:id="colSubIsActive" prefWidth="92.6666259765625" text="is Active" />
                            </columns>
                         </TableView>
-                        <TextField fx:id="txtSubCategoryIdSearch" editable="false" layoutX="1003.0" layoutY="493.0" prefHeight="37.0" prefWidth="371.0" />
+                        <TextField fx:id="txtSubCategoryIdSearch" layoutX="1003.0" layoutY="493.0" prefHeight="37.0" prefWidth="371.0" />
                         <TextField fx:id="txtSubEditName" layoutX="1004.0" layoutY="546.0" prefHeight="37.0" prefWidth="369.0" promptText="Sub - Category Name">
                            <font>
                               <Font size="15.0" />
@@ -152,7 +151,7 @@
                               <Font size="15.0" />
                            </font>
                         </TextField>
-                        <Button layoutX="1005.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnSubEditSave" prefHeight="37.0" prefWidth="666.0" text="Save">
+                        <Button layoutX="1005.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnSubEditSave" prefHeight="37.0" prefWidth="666.0" text="Update">
                            <font>
                               <Font size="18.0" />
                            </font>

@@ -2,8 +2,13 @@ package edu.icet.clothify.controller;
 
 import edu.icet.clothify.bo.BoFactory;
 import edu.icet.clothify.bo.custom.CategoryBo;
+import edu.icet.clothify.bo.custom.SubCategoryBo;
 import edu.icet.clothify.dto.Category;
+import edu.icet.clothify.dto.SubCategory;
 import edu.icet.clothify.dto.tableModels.CategoryParentDetailTbl;
+import edu.icet.clothify.dto.tableModels.CategorySubDetailTbl;
+import edu.icet.clothify.entity.CategoryEntity;
+import edu.icet.clothify.entity.SubCategoryEntity;
 import edu.icet.clothify.util.BoType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -15,6 +20,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import org.modelmapper.ModelMapper;
 
 import java.io.IOException;
 import java.net.URL;
@@ -59,18 +65,30 @@ public class CategoryForm implements Initializable {
     public ComboBox cmbEditParentIsActive;
 
     CategoryBo categoryBo = BoFactory.getInstance().getBo(BoType.CATEGORY);
+    SubCategoryBo subCategoryBo = BoFactory.getInstance().getBo(BoType.SUBCATEGORY);
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         generateParentCategoryId();
+        generateSubCategoryId();
         loadParentCategoryTable();
+        loadSubCategoryTable();
+        loadSubCategoryCmb();
+        // Category Table
         cmbEditParentIsActive.getItems().addAll("Active","Deactivated");
         colParentId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colParentName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colParentDescription.setCellValueFactory(new PropertyValueFactory<>("desc"));
         colParentRegDate.setCellValueFactory(new PropertyValueFactory<>("regDate"));
         colParentIsActive.setCellValueFactory(new PropertyValueFactory<>("isActive"));
+        // Sub-Category Table
+        colSubDescription.setCellValueFactory(new PropertyValueFactory<>("desc"));
+        colSubId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colSubName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        colSubRegDate.setCellValueFactory(new PropertyValueFactory<>("regDate"));
+        colSubIsActive.setCellValueFactory(new PropertyValueFactory<>("isActive"));
+        colSubSubId.setCellValueFactory(new PropertyValueFactory<>("subId"));
     }
 
     public void btnBack(MouseEvent mouseEvent) throws IOException {
@@ -159,6 +177,23 @@ public class CategoryForm implements Initializable {
         parentCategoryTable.setItems(tbl);
     }
 
+    private void loadSubCategoryTable (){
+        ObservableList<SubCategoryEntity> obList = subCategoryBo.getAllSubCategories();
+        ObservableList<CategorySubDetailTbl> list = FXCollections.observableArrayList();
+        obList.forEach(element ->{
+            CategorySubDetailTbl tbl = new CategorySubDetailTbl(
+                    element.getId(),
+                    element.getCategory().getId(),
+                    element.getName(),
+                    element.getDescription(),
+                    element.getRegDate(),
+                    element.getIsActive()
+            );
+            list.add(tbl);
+        });
+        SubCategoryTable.setItems(list);
+    }
+
 
     public void btnParentSearch(ActionEvent actionEvent) {
         Category category = categoryBo.getById(txtParentCategoryIDSearch.getText());
@@ -180,18 +215,96 @@ public class CategoryForm implements Initializable {
     }
 
     public void btnSubSave(ActionEvent actionEvent) {
+
+        Date date = new Date();
+        SimpleDateFormat d = new SimpleDateFormat("yyyy-MM-dd");
+        String dateString = d.format(date);
+
+        SubCategory category = new SubCategory(
+                txtSubGeneratedId.getText(),
+                txtSubName.getText(),
+                txtSubDescription.getText(),
+                dateString,
+                true
+        );
+        Boolean isSaved = subCategoryBo.save(category,cmbSubCategoryId.getValue().toString());
+        if (isSaved){
+            new Alert(Alert.AlertType.INFORMATION,"Sub-Category Successfully Added!!");
+            resetSubDetails();
+            generateSubCategoryId();
+            loadSubCategoryTable();
+        }
+
+    }
+
+    private void resetSubDetails(){
+        txtSubName.clear();
+        txtSubDescription.clear();
+        cmbSubCategoryId.setValue("");
+        cmbSubCategoryId.setPromptText("Category ID");
     }
 
     public void btnSubEditSave(ActionEvent actionEvent) {
+        SubCategoryEntity subCategory=subCategoryBo.getById(txtSubCategoryIdSearch.getText());
+        Category byId = categoryBo.getById(cmbSubEditCategoryId.getValue().toString());
+        CategoryEntity categoryEntity = new ModelMapper().map(byId,CategoryEntity.class);
+        Boolean isActive = false;
+        if(cmbSubEditIsActive.getValue().toString().equals("Active")){
+            isActive=true;
+        }
+        SubCategoryEntity entity = new SubCategoryEntity();
+        entity.setId(txtSubCategoryIdSearch.getText());
+        entity.setCategory(categoryEntity);
+        entity.setName(txtSubEditName.getText());
+        entity.setDescription(txtSubEditDescription.getText());
+        entity.setIsActive(isActive);
+        entity.setRegDate(subCategory.getRegDate());
+
+        Boolean isUpdated = subCategoryBo.update(entity);
+        if(isUpdated){
+            new Alert(Alert.AlertType.INFORMATION,"Sub - Category Updated Successfully!!");
+            resetSubEdit();
+            loadSubCategoryTable();
+        }
+
+    }
+
+    private void resetSubEdit(){
+        txtSubEditName.clear();
+        txtSubEditDescription.clear();
+        cmbSubEditIsActive.setValue("Availability");
+        cmbSubCategoryId.setValue("Category ID");
     }
 
     public void btnSubEditSearch(ActionEvent actionEvent) {
+        SubCategoryEntity subCategory=subCategoryBo.getById(txtSubCategoryIdSearch.getText());
+        if (subCategory!=null){
+            ObservableList<Category> allCategories = categoryBo.getAllCategories();
+            ObservableList<String> allStrings = FXCollections.observableArrayList();
+            allCategories.forEach(element ->{
+                allStrings.add(element.getId());
+            });
+            cmbSubEditCategoryId.setItems(allStrings);
+            cmbSubEditIsActive.getItems().addAll("Active","Deactivated");
+            txtSubEditDescription.setText(subCategory.getDescription());
+            txtSubEditName.setText(subCategory.getName());
+            cmbSubEditCategoryId.setValue(subCategory.getCategory().getId());
+            if(subCategory.getIsActive()){
+                cmbSubEditIsActive.setValue("Active");
+            }else{
+                cmbSubEditIsActive.setValue("Deactivated");
+            }
+
+        }
+
     }
 
     public void btnSubClear(ActionEvent actionEvent) {
+        resetSubDetails();
     }
 
     public void btnSubEditClear(ActionEvent actionEvent) {
+        txtSubCategoryIdSearch.clear();
     }
 
     private void generateParentCategoryId(){
@@ -208,6 +321,31 @@ public class CategoryForm implements Initializable {
                 txtgeneratedCategoryId.setText(String.format("CAT%03d",number));
             }
         }
+    }
+
+    private void generateSubCategoryId(){
+        int count = subCategoryBo.empCount();
+        if (count==0){
+            txtSubGeneratedId.setText("SCAT001");
+        }else{
+            String lastEmployeeId = subCategoryBo.lastEmpId();
+            Pattern pattern = Pattern.compile("[A-Za-z](\\d+)");
+            Matcher matcher = pattern.matcher(lastEmployeeId);
+            if(matcher.find()){
+                int number = Integer.parseInt(matcher.group(1));
+                number++;
+                txtSubGeneratedId.setText(String.format("SCAT%03d",number));
+            }
+        }
+    }
+
+    private void loadSubCategoryCmb(){
+        ObservableList<Category> obList = categoryBo.getAllCategories();
+        ObservableList<String> list = FXCollections.observableArrayList();
+        obList.forEach(element ->{
+            list.add(element.getId());
+        });
+        cmbSubCategoryId.setItems(list);
     }
 
 

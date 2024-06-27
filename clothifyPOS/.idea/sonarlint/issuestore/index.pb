@@ -131,3 +131,11 @@ SclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/CategoryDao.
 dclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/CategoryParentDetailTbl.java,7\d\7da1c904d737f8abd34f3eecf21719809f88a131
 ë
 aclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/CategorySubDetailTbl.java,a\4\a46ba92d2ba4736b0a0159ece3c2de447457c459
+ç
+]clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/impl/SubCategoryBoImpl.java,6\4\645ec83175b5b225ec4dca7de4e634d5818beaca
+Ñ
+TclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/SubCategoryBo.java,9\a\9a3c4b391b577e35bc1275141a6301d81dc3a25d
+è
+_clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/Impl/SubCategoryDaoImpl.java,7\3\73f26947b83de68d8d567d7b29db720d1e78903b
+Ü
+VclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/SubCategoryDao.java,3\d\3dd44ceba272588cb1fd3332aa8824de6dc68e81

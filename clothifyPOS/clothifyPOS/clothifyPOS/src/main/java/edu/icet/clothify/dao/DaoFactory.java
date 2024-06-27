@@ -1,9 +1,6 @@
 package edu.icet.clothify.dao;
 
-import edu.icet.clothify.dao.custom.Impl.CategoryDaoImpl;
-import edu.icet.clothify.dao.custom.Impl.EmployeeDaoImpl;
-import edu.icet.clothify.dao.custom.Impl.SupplierDaoImpl;
-import edu.icet.clothify.dao.custom.Impl.UserDaoImpl;
+import edu.icet.clothify.dao.custom.Impl.*;
 import edu.icet.clothify.util.DaoType;
 
 public class DaoFactory {
@@ -21,6 +18,7 @@ public class DaoFactory {
             case USER: return (T) new UserDaoImpl();
             case SUPPLIER: return (T) new SupplierDaoImpl();
             case CATEGORY: return (T) new CategoryDaoImpl();
+            case SUBCATEGORY: return (T) new SubCategoryDaoImpl();
         }
         return null;
     }

@@ -1,9 +1,6 @@
 package edu.icet.clothify.bo;
 
-import edu.icet.clothify.bo.custom.impl.CategoryBoImpl;
-import edu.icet.clothify.bo.custom.impl.EmployeeBoImpl;
-import edu.icet.clothify.bo.custom.impl.SupplierBoImpl;
-import edu.icet.clothify.bo.custom.impl.UserBoImpl;
+import edu.icet.clothify.bo.custom.impl.*;
 import edu.icet.clothify.util.BoType;
 
 public class BoFactory {
@@ -21,6 +18,7 @@ public class BoFactory {
             case USER: return (T) new UserBoImpl();
             case SUPPLIER: return (T) new SupplierBoImpl();
             case CATEGORY: return (T) new CategoryBoImpl();
+            case SUBCATEGORY: return (T) new SubCategoryBoImpl();
         }
         return null;
     }
