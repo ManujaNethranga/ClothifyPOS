@@ -69,6 +69,8 @@ public class ProductPageForm implements Initializable {
     public TableColumn colisActive;
     public TableColumn colRegDate;
     public Button updateBtn;
+    public TextField txtStock;
+    public TableColumn colStock;
 
     CategoryBo categoryBo = BoFactory.getInstance().getBo(BoType.CATEGORY);
     SubCategoryBo subCategoryBo = BoFactory.getInstance().getBo(BoType.SUBCATEGORY);
@@ -89,6 +91,7 @@ public class ProductPageForm implements Initializable {
         String dateString = d.format(date);
         Product product = new Product();
         product.setId(txtProductId.getText());
+        product.setStock(Integer.parseInt(txtStock.getText()));
         product.setName(txtProductName.getText());
         product.setPrice(Double.parseDouble(txtPrice.getText()));
         product.setDescription(txtDescription.getText());
@@ -105,6 +108,7 @@ public class ProductPageForm implements Initializable {
            new Alert(Alert.AlertType.INFORMATION,"Product Saves Successfully").show();
            resetTextFields();
            generateProductId();
+           loadProductTable();
        }
 
     }
@@ -137,6 +141,7 @@ public class ProductPageForm implements Initializable {
     public void editBtnUpdate(ActionEvent actionEvent) throws IOException, SQLException {
         ProductEntity productEntity = productBo.getById(editProductId.getText());
         ProductEntity product = new ProductEntity();
+        product.setStock(productEntity.getStock());
         product.setRegDate(productEntity.getRegDate());
         product.setId(editProductId.getText());
         product.setName(editTxtName.getText());
@@ -283,6 +288,8 @@ public class ProductPageForm implements Initializable {
         colSize.setCellValueFactory(new PropertyValueFactory<>("size"));
         colisActive.setCellValueFactory(new PropertyValueFactory<>("isActive"));
         colRegDate.setCellValueFactory(new PropertyValueFactory<>("date"));
+        colStock.setCellValueFactory(new PropertyValueFactory<>("stock"));
+
     }
 
     private void LoadEditCategory() {
@@ -320,7 +327,8 @@ public class ProductPageForm implements Initializable {
                     element.getSupplierEntity().getId(),
                     element.getSize(),
                     element.getIsActive(),
-                    element.getRegDate()
+                    element.getRegDate(),
+                    element.getStock()
             );
             table.add(productDetailTable);
         });

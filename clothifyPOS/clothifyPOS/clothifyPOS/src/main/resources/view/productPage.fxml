@@ -54,7 +54,7 @@
                               <Font size="15.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="txtDescription" layoutX="294.0" layoutY="340.0" prefHeight="37.0" prefWidth="513.0" promptText="Description">
+                        <TextField fx:id="txtDescription" layoutX="294.0" layoutY="340.0" prefHeight="37.0" prefWidth="253.0" promptText="Description">
                            <font>
                               <Font size="15.0" />
                            </font>
@@ -149,14 +149,20 @@
                           <columns>
                             <TableColumn fx:id="colProductId" prefWidth="131.0" text="Product ID" />
                             <TableColumn fx:id="colName" prefWidth="196.6666259765625" text="Name" />
-                              <TableColumn fx:id="colDescription" prefWidth="360.3333740234375" text="Description" />
-                              <TableColumn fx:id="colSCategory" prefWidth="135.6666259765625" text="S-Category ID" />
-                              <TableColumn fx:id="colSupplier" prefWidth="126.6666259765625" text="Supplier ID" />
-                              <TableColumn fx:id="colSize" prefWidth="78.6666259765625" text="Size" />
-                              <TableColumn fx:id="colisActive" prefWidth="105.6666259765625" text="isActive" />
-                              <TableColumn fx:id="colRegDate" prefWidth="110.333251953125" text="Reg Date" />
+                              <TableColumn fx:id="colDescription" prefWidth="285.0" text="Description" />
+                              <TableColumn fx:id="colSCategory" prefWidth="162.6666259765625" text="S-Category ID" />
+                              <TableColumn fx:id="colSupplier" prefWidth="129.3333740234375" text="Supplier ID" />
+                              <TableColumn fx:id="colSize" prefWidth="87.0" text="Size" />
+                              <TableColumn fx:id="colisActive" prefWidth="78.3333740234375" text="isActive" />
+                              <TableColumn fx:id="colRegDate" prefWidth="90.0" text="Reg Date" />
+                              <TableColumn fx:id="colStock" prefWidth="83.0" text="Stock" />
                           </columns>
                         </TableView>
+                        <TextField fx:id="txtStock" layoutX="562.0" layoutY="339.0" prefHeight="37.0" prefWidth="245.0" promptText="Stock">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
                      </children>
                   </Pane>
                </content>

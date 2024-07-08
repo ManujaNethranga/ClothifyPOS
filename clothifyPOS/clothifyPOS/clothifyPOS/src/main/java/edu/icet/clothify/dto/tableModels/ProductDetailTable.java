@@ -18,4 +18,5 @@ public class ProductDetailTable {
     private String size;
     private Boolean isActive;
     private String date;
+    private Integer stock;
 }

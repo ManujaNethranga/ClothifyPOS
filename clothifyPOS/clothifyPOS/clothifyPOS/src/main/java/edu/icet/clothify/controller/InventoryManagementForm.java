@@ -23,7 +23,10 @@ public class InventoryManagementForm {
         inventoryManagementPane.setCenter(parent);
     }
 
-    public void btnManageStock(ActionEvent actionEvent) {
+    public void btnManageStock(ActionEvent actionEvent) throws IOException {
+        Parent parent = new FXMLLoader(getClass().getResource("/view/StockManagePage.fxml")).load();
+        inventoryManagementPane.getChildren().clear();
+        inventoryManagementPane.setCenter(parent);
     }
 
     public void btnManageSubCategory(ActionEvent actionEvent) {

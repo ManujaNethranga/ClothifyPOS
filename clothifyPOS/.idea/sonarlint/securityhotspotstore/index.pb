@@ -151,3 +151,5 @@ PclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/ProductBo.jav
 RclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/ProductDao.java,5\a\5a7727726bb6ea44a4d84639fdd0eda4a264efe8
 è
 _clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/ProductDetailTable.java,a\6\a6475e4bf5dc37662c799235c6ce25994d83409b
+á
+WclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/controller/StockManageForm.java,3\b\3b87e44c1e150a3a436b0ea3ae4d8ddf034f845c
