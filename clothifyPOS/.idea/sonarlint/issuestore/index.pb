@@ -139,3 +139,15 @@ TclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/SubCategoryBo
 _clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/Impl/SubCategoryDaoImpl.java,7\3\73f26947b83de68d8d567d7b29db720d1e78903b
 Ü
 VclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/SubCategoryDao.java,3\d\3dd44ceba272588cb1fd3332aa8824de6dc68e81
+á
+WclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/controller/ProductPageForm.java,2\f\2fb5b6fc18a7c8fa72866faddf3e6e094abec40c
+â
+YclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/impl/ProductBoImpl.java,9\1\916a138c0311cfba88aa06b000cc0c84a987e771
+Ä
+PclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/ProductBo.java,2\6\26bf860d8812b637809f11a4bf88d2b36b0951d7
+ã
+[clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/Impl/ProductDaoImpl.java,e\5\e5b3684cd2df35ba20199fd23ddda334d34a6ec1
+Ç
+RclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/ProductDao.java,5\a\5a7727726bb6ea44a4d84639fdd0eda4a264efe8
+è
+_clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/ProductDetailTable.java,a\6\a6475e4bf5dc37662c799235c6ce25994d83409b

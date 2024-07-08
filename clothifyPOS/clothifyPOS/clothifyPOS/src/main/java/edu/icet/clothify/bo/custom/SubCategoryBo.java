@@ -18,4 +18,6 @@ public interface SubCategoryBo extends SuperBo {
     SubCategoryEntity getById(String text);
 
     Boolean update(SubCategoryEntity entity);
+
+    ObservableList<SubCategory> getSubCategoryByParentCategory(String id);
 }

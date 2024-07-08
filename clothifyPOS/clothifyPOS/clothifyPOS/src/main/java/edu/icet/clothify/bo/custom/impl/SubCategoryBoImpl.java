@@ -61,5 +61,17 @@ public class SubCategoryBoImpl implements SubCategoryBo {
         return subCategoryDao.update(entity);
     }
 
+    @Override
+    public ObservableList<SubCategory> getSubCategoryByParentCategory(String id) {
+        ObservableList<SubCategory> obList = FXCollections.observableArrayList();
+        List<SubCategoryEntity> allSubCategoryDetail = subCategoryDao.getAllSubCategoryDetail();
+        allSubCategoryDetail.forEach(element ->{
+            if(element.getCategory().getId().equals(id)){
+                obList.add(new ModelMapper().map(element,SubCategory.class));
+            }
+        });
+        return obList;
+    }
+
 
 }

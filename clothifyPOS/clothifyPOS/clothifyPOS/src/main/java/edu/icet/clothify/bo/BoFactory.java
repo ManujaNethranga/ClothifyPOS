@@ -19,6 +19,7 @@ public class BoFactory {
             case SUPPLIER: return (T) new SupplierBoImpl();
             case CATEGORY: return (T) new CategoryBoImpl();
             case SUBCATEGORY: return (T) new SubCategoryBoImpl();
+            case PRODUCT: return (T) new ProductBoImpl();
         }
         return null;
     }

@@ -19,6 +19,7 @@ public class DaoFactory {
             case SUPPLIER: return (T) new SupplierDaoImpl();
             case CATEGORY: return (T) new CategoryDaoImpl();
             case SUBCATEGORY: return (T) new SubCategoryDaoImpl();
+            case PRODUCT: return (T) new ProductDaoImpl();
         }
         return null;
     }
