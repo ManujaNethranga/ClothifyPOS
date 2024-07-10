@@ -63,4 +63,9 @@ public class ProductBoImpl implements ProductBo {
         product.setSubCategoryEntity(categoryDao.getById(subCategory));
         return productDao.update(product);
     }
+
+    @Override
+    public Boolean updateEntity(ProductEntity byId) {
+        return productDao.update(byId);
+    }
 }

@@ -121,6 +121,8 @@ public class CategoryForm implements Initializable {
                 new Alert(Alert.AlertType.INFORMATION,"Category Saved Successfully!!").show();
                 generateParentCategoryId();
                 resetParentDetails();
+                loadParentCategoryTable();
+                loadSubCategoryCmb();
             }
         }
 

@@ -17,4 +17,6 @@ public interface ProductBo extends SuperBo {
     ProductEntity getById(String text);
 
     Boolean update(ProductEntity product, String string, String string1);
+
+    Boolean updateEntity(ProductEntity byId);
 }

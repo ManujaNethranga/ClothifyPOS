@@ -120,7 +120,7 @@ public class EmployeePageForm implements Initializable {
     }
 
     public void btnSearch(MouseEvent mouseEvent) {
-        Employee employee=employeeBo.getById(viewEmployeeId.getText());
+        Employee employee = employeeBo.getById(viewEmployeeId.getText());
         viewFirstName.setText(employee.getFirstName());
         viewLastName.setText(employee.getLastName());
         viewAddress.setText(employee.getAddress());

@@ -14,7 +14,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <BorderPane fx:id="StockPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.clothify.controller.StockManageForm">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
@@ -23,7 +22,7 @@
                <content>
                   <Pane prefHeight="1080.0" prefWidth="1920.0">
                      <children>
-                        <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../img/bgImg.png" />
                            </image>
@@ -43,12 +42,12 @@
                               <Font name="Calibri Bold" size="65.0" />
                            </font>
                         </Text>
-                        <TableView layoutX="1063.0" layoutY="271.0" prefHeight="716.0" prefWidth="786.0">
+                        <TableView fx:id="tblAllProducts" layoutX="1063.0" layoutY="271.0" prefHeight="716.0" prefWidth="786.0">
                           <columns>
-                            <TableColumn prefWidth="152.3333740234375" text="ID" />
-                            <TableColumn prefWidth="229.3333740234375" text="Name" />
-                              <TableColumn prefWidth="216.6666259765625" text="Price" />
-                              <TableColumn prefWidth="186.0" text="Stock" />
+                            <TableColumn fx:id="colId" prefWidth="152.3333740234375" text="ID" />
+                            <TableColumn fx:id="colName" prefWidth="229.3333740234375" text="Name" />
+                              <TableColumn fx:id="colPrice" prefWidth="216.6666259765625" text="Price" />
+                              <TableColumn fx:id="colQuantity" prefWidth="186.0" text="Stock" />
                           </columns>
                         </TableView>
                         <Text fill="WHITE" layoutX="1066.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Filter Settings : " textAlignment="CENTER">
@@ -56,26 +55,27 @@
                               <Font name="Calibri Bold" size="24.0" />
                            </font>
                         </Text>
-                        <ComboBox layoutX="1294.0" layoutY="196.0" prefHeight="33.0" prefWidth="552.0" promptText="Filter Options" />
+                        <ComboBox fx:id="cmbFilter" layoutX="1294.0" layoutY="196.0" onAction="#cmbFilterFunction" prefHeight="33.0" prefWidth="552.0" promptText="Filter Options" />
                         <Text fill="WHITE" layoutX="229.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Product ID : " textAlignment="CENTER">
                            <font>
                               <Font name="Calibri Bold" size="24.0" />
                            </font>
                         </Text>
-                        <TextField layoutX="457.0" layoutY="278.0" prefHeight="32.0" prefWidth="280.0" promptText="product Id" />
-                        <TextField layoutX="458.0" layoutY="334.0" prefHeight="32.0" prefWidth="280.0" promptText="Name" />
-                        <TextField layoutX="459.0" layoutY="391.0" prefHeight="32.0" prefWidth="280.0" promptText="Stock" />
-                        <Button layoutX="756.0" layoutY="278.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" text="Search" />
-                        <Button layoutX="460.0" layoutY="451.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="279.0" text="Update" />
-                        <TableView layoutX="231.0" layoutY="558.0" prefHeight="429.0" prefWidth="756.0">
+                        <TextField fx:id="txtProductId" layoutX="457.0" layoutY="278.0" prefHeight="32.0" prefWidth="280.0" promptText="product Id" />
+                        <TextField fx:id="txtName" layoutX="458.0" layoutY="334.0" prefHeight="32.0" prefWidth="280.0" promptText="Name" />
+                        <TextField fx:id="txtQuantity" layoutX="474.0" layoutY="435.0" prefHeight="32.0" prefWidth="280.0" promptText="Stock" />
+                        <Button layoutX="756.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="30.0" prefWidth="87.0" text="Search" />
+                        <Button fx:id="btnUpdate" layoutX="469.0" layoutY="503.0" mnemonicParsing="false" onAction="#btnUpdateFunc" prefHeight="34.0" prefWidth="279.0" text="Update" />
+                        <TableView fx:id="tblUpdate" layoutX="231.0" layoutY="558.0" prefHeight="429.0" prefWidth="756.0">
                           <columns>
-                            <TableColumn prefWidth="115.0" text="ID" />
-                            <TableColumn prefWidth="153.0" text="Name" />
-                              <TableColumn prefWidth="164.66665649414062" text="Price" />
-                              <TableColumn prefWidth="166.33331298828125" text="Last Updated Quantity" />
-                              <TableColumn prefWidth="157.0" text="Last Updated Date" />
+                            <TableColumn fx:id="colUpdateId" prefWidth="115.0" text="ID" />
+                            <TableColumn fx:id="colUpdateName" prefWidth="153.0" text="Name" />
+                              <TableColumn fx:id="colUpdatePrice" prefWidth="164.66665649414062" text="Price" />
+                              <TableColumn fx:id="colUpdateQuantity" prefWidth="166.33331298828125" text="Last Updated Quantity" />
+                              <TableColumn fx:id="colUpdateDate" prefWidth="157.0" text="Last Updated Date" />
                           </columns>
                         </TableView>
+                        <TextField fx:id="txtStock" layoutX="463.0" layoutY="380.0" prefHeight="32.0" prefWidth="280.0" promptText="Name" />
                      </children>
                   </Pane>
                </content>
