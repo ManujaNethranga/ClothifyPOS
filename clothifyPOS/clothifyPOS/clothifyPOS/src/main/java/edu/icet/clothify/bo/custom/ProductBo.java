@@ -19,4 +19,8 @@ public interface ProductBo extends SuperBo {
     Boolean update(ProductEntity product, String string, String string1);
 
     Boolean updateEntity(ProductEntity byId);
+
+    ObservableList<Product> getLowToHigh();
+
+    ObservableList<Product> getHighToLow();
 }

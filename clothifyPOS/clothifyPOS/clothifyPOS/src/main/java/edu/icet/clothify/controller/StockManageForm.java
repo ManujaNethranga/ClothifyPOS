@@ -3,6 +3,7 @@ package edu.icet.clothify.controller;
 import edu.icet.clothify.bo.BoFactory;
 import edu.icet.clothify.bo.custom.ProductBo;
 import edu.icet.clothify.bo.custom.StockBo;
+import edu.icet.clothify.dto.Product;
 import edu.icet.clothify.dto.StockUpdateDetails;
 import edu.icet.clothify.dto.tableModels.StockDetailTable;
 import edu.icet.clothify.dto.tableModels.StockTable;
@@ -11,6 +12,7 @@ import edu.icet.clothify.entity.StockUpdateDetailEntity;
 import edu.icet.clothify.util.BoType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -19,6 +21,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
+import org.modelmapper.ModelMapper;
 
 import java.io.IOException;
 import java.net.URL;
@@ -54,6 +57,8 @@ public class StockManageForm implements Initializable {
         btnUpdate.setDisable(true);
         loadStockTable();
         loadStockDetailTable();
+        cmbFilter.getItems().setAll("Low To High","High to Low","Default");
+
         colId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
@@ -75,7 +80,28 @@ public class StockManageForm implements Initializable {
     }
 
     public void cmbFilterFunction(ActionEvent actionEvent) {
-        
+        String cmbValue = cmbFilter.getValue().toString();
+
+        if(cmbValue.equals("Low To High")){
+
+            ObservableList<Product> tableData  = productBo.getLowToHigh();
+            loadStockTable(tableData);
+
+        }else if(cmbValue.equals("High to Low")){
+
+            ObservableList<Product> tableData  = productBo.getHighToLow();
+            loadStockTable(tableData);
+
+        }else{
+
+            ObservableList<ProductEntity> tableData  = productBo.getAllProducts();
+            ObservableList<Product> data = FXCollections.observableArrayList();
+            tableData.forEach(element ->{
+                data.add(new ModelMapper().map(element,Product.class));
+            });
+            loadStockTable(data);
+
+        }
     }
 
     public void btnSearch(ActionEvent actionEvent) {
@@ -136,6 +162,22 @@ public class StockManageForm implements Initializable {
         ObservableList<ProductEntity> allProducts = productBo.getAllProducts();
         ObservableList<StockTable> table = FXCollections.observableArrayList();
         allProducts.forEach(element ->{
+            if(element.getIsActive()){
+                StockTable stockTable = new StockTable(
+                        element.getId(),
+                        element.getName(),
+                        element.getPrice(),
+                        element.getStock()
+                );
+                table.add(stockTable);
+            }
+
+        });
+        tblAllProducts.setItems(table);
+    }
+    private void loadStockTable(ObservableList<Product>list) {
+        ObservableList<StockTable> table = FXCollections.observableArrayList();
+        list.forEach(element ->{
             if(element.getIsActive()){
                 StockTable stockTable = new StockTable(
                         element.getId(),

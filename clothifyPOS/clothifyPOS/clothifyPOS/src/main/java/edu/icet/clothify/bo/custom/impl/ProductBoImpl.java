@@ -68,4 +68,24 @@ public class ProductBoImpl implements ProductBo {
     public Boolean updateEntity(ProductEntity byId) {
         return productDao.update(byId);
     }
+
+    @Override
+    public ObservableList<Product> getLowToHigh() {
+        ObservableList<Product> obList = FXCollections.observableArrayList();
+        List<ProductEntity> list = productDao.getLowToHigh();
+        list.forEach(element ->{
+            obList.add(new ModelMapper().map(element,Product.class));
+        });
+        return obList;
+    }
+
+    @Override
+    public ObservableList<Product> getHighToLow() {
+        ObservableList<Product>obList = FXCollections.observableArrayList();
+        List<ProductEntity> list = productDao.getHighToLow();
+        list.forEach(element ->{
+            obList.add(new ModelMapper().map(element,Product.class));
+        });
+        return obList;
+    }
 }

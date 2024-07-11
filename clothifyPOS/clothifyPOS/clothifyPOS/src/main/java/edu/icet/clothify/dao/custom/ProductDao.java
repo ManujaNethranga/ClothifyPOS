@@ -16,4 +16,8 @@ public interface ProductDao extends CrudDao<ProductEntity> {
     ProductEntity getById(String id);
 
     Boolean update(ProductEntity productEntity);
+
+    List<ProductEntity> getLowToHigh();
+
+    List<ProductEntity> getHighToLow();
 }

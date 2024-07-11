@@ -173,3 +173,7 @@ SclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/StockUpdateDetails.
 ]clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/stockDetailTable.java,8\a\8a94863ec9740469af2a55e96e45d018e400bd91
 ç
 ]clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/StockDetailTable.java,2\3\23a63a9ad583f4566c4e9900db49b87d0542c388
+Ö
+UclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/controller/SalesPageForm.java,b\f\bf4fc7f20242e8929a82469fba8e2ad24d50f832
+Ö
+UclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/controller/OrderPageForm.java,e\3\e35577b29c53c178a99f2da412afb388942842e8

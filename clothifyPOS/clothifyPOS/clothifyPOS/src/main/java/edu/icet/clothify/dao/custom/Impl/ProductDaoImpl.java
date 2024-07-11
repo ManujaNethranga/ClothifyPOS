@@ -101,4 +101,40 @@ public class ProductDaoImpl implements ProductDao {
         session.close();
         return true;
     }
+
+    @Override
+    public List<ProductEntity> getLowToHigh() {
+        Session session = HibernateUtil.getSession();
+        Transaction ts = null;
+        List<ProductEntity> list;
+        try{
+            ts = session.beginTransaction();
+            list = session.createQuery("SELECT a FROM ProductEntity a ORDER BY stock ASC",ProductEntity.class).getResultList();
+            ts.commit();
+        }catch(Exception e){
+            if(ts!=null)ts.rollback();
+            throw e;
+        }finally {
+            session.close();
+        }
+        return list;
+    }
+
+    @Override
+    public List<ProductEntity> getHighToLow() {
+        Session session = HibernateUtil.getSession();
+        Transaction ts = null;
+        List<ProductEntity> list;
+        try{
+            ts = session.beginTransaction();
+            list = session.createQuery("SELECT a FROM ProductEntity a ORDER BY stock DESC",ProductEntity.class).getResultList();
+            ts.commit();
+        }catch(Exception e){
+            if(ts!=null)ts.rollback();
+            throw e;
+        }finally {
+            session.close();
+        }
+        return list;
+    }
 }
