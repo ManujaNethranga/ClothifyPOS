@@ -18,7 +18,10 @@ public class AdminDashboardForm {
         AdminDashboardPane.setCenter(parent);
     }
 
-    public void btnOrders(ActionEvent actionEvent) {
+    public void btnOrders(ActionEvent actionEvent) throws IOException {
+        Parent parent = new FXMLLoader(getClass().getResource("/view/OrderPage.fxml")).load();
+        AdminDashboardPane.getChildren().clear();
+        AdminDashboardPane.setCenter(parent);
     }
 
     public void btnSales(ActionEvent actionEvent) {
@@ -34,7 +37,7 @@ public class AdminDashboardForm {
     }
 
     public void BtnInventory(ActionEvent actionEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/inventoryManagement.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/InventoryManagement.fxml")).load();
         AdminDashboardPane.getChildren().clear();
         AdminDashboardPane.setCenter(parent);
     }
@@ -46,7 +49,7 @@ public class AdminDashboardForm {
     }
 
     public void btnAdminDashboardExit(MouseEvent mouseEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/welcomePage.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/WelcomePage.fxml")).load();
         AdminDashboardPane.getChildren().clear();
         AdminDashboardPane.setCenter(parent);
     }

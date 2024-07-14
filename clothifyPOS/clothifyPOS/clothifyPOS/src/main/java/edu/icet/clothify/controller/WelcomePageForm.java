@@ -11,13 +11,13 @@ public class WelcomePageForm {
     public BorderPane WelcomeBorderPane;
 
     public void WelcomeLoginBtn(ActionEvent actionEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/loginPage.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/LoginPage.fxml")).load();
         WelcomeBorderPane.getChildren().clear();
         WelcomeBorderPane.setCenter(parent);
     }
 
     public void WelcomeRegisterBtn(ActionEvent actionEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/registerPage.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/RegisterPage.fxml")).load();
         WelcomeBorderPane.getChildren().clear();
         WelcomeBorderPane.setCenter(parent);
     }

@@ -130,7 +130,7 @@ public class SupplierForm implements Initializable {
 
 
     public void btnBack(MouseEvent mouseEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/inventoryManagement.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/InventoryManagement.fxml")).load();
         SupplierPane.getChildren().clear();
         SupplierPane.setCenter(parent);
     }

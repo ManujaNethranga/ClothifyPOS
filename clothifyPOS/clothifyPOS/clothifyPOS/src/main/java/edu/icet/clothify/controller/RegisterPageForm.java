@@ -15,7 +15,6 @@ import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Border;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 
@@ -24,9 +23,7 @@ import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -123,7 +120,7 @@ public class RegisterPageForm implements Initializable {
 
     @FXML
     private void RegisterPageLogin(MouseEvent mouseEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/loginPage.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/LoginPage.fxml")).load();
         RegisterBorderPane.getChildren().clear();
         RegisterBorderPane.setCenter(parent);
     }

@@ -8,11 +8,9 @@ import edu.icet.clothify.dto.StockUpdateDetails;
 import edu.icet.clothify.dto.tableModels.StockDetailTable;
 import edu.icet.clothify.dto.tableModels.StockTable;
 import edu.icet.clothify.entity.ProductEntity;
-import edu.icet.clothify.entity.StockUpdateDetailEntity;
 import edu.icet.clothify.util.BoType;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -74,7 +72,7 @@ public class StockManageForm implements Initializable {
 
 
     public void btnBack(MouseEvent mouseEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/inventoryManagement.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/InventoryManagement.fxml")).load();
         StockPane.getChildren().clear();
         StockPane.setCenter(parent);
     }

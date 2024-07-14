@@ -24,7 +24,6 @@ import org.modelmapper.ModelMapper;
 
 import java.io.IOException;
 import java.net.URL;
-import java.rmi.AlreadyBoundException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.ResourceBundle;
@@ -92,7 +91,7 @@ public class CategoryForm implements Initializable {
     }
 
     public void btnBack(MouseEvent mouseEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/inventoryManagement.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/InventoryManagement.fxml")).load();
         CategoryBorderPane.getChildren().clear();
         CategoryBorderPane.setCenter(parent);
     }

@@ -18,7 +18,7 @@ public class InventoryManagementForm {
     }
 
     public void btnManageProducts(ActionEvent actionEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/productPage.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/ProductPage.fxml")).load();
         inventoryManagementPane.getChildren().clear();
         inventoryManagementPane.setCenter(parent);
     }
@@ -33,7 +33,7 @@ public class InventoryManagementForm {
     }
 
     public void btnManageCategories(ActionEvent actionEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/categoryPage.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/CategoryPage.fxml")).load();
         inventoryManagementPane.getChildren().clear();
         inventoryManagementPane.setCenter(parent);
     }

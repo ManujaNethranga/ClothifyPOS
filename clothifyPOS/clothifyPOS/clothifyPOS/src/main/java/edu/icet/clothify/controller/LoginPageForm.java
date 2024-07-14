@@ -2,14 +2,11 @@ package edu.icet.clothify.controller;
 
 import edu.icet.clothify.bo.BoFactory;
 import edu.icet.clothify.bo.custom.UserBo;
-import edu.icet.clothify.dto.User;
 import edu.icet.clothify.util.BoType;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -21,7 +18,6 @@ import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ResourceBundle;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class LoginPageForm implements Initializable {
     public TextField txtLoginPass;
@@ -33,7 +29,7 @@ public class LoginPageForm implements Initializable {
     UserBo userBo = BoFactory.getInstance().getBo(BoType.USER);
 
     public void LoginPageRegister(MouseEvent mouseEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/registerPage.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/RegisterPage.fxml")).load();
         LoginPageBorderPane.getChildren().clear();
         LoginPageBorderPane.setCenter(parent);
     }

@@ -80,7 +80,7 @@ public class ProductPageForm implements Initializable {
     File file;
 
     public void btnBack(MouseEvent mouseEvent) throws IOException {
-        Parent parent = new FXMLLoader(getClass().getResource("/view/inventoryManagement.fxml")).load();
+        Parent parent = new FXMLLoader(getClass().getResource("/view/InventoryManagement.fxml")).load();
         ProductBorderPane.getChildren().clear();
         ProductBorderPane.setCenter(parent);
     }

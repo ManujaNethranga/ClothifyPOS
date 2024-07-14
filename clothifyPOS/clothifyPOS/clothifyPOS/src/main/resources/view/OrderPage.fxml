@@ -1,14 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="edu.icet.clothify.controller.OrderPageForm"
-            prefHeight="400.0" prefWidth="600.0">
-
+<BorderPane fx:id="OrderPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.clothify.controller.OrderPageForm">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="1080.0" prefWidth="1920.0">
+               <content>
+                  <Pane prefHeight="1080.0" prefWidth="1920.0">
+                     <children>
+                        <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bgImg.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="83.0" layoutY="73.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="51.0" style="-fx-background-color: #282828; -fx-background-radius: 100PX; -fx-border-color: WHITE; -fx-border-radius: 100PX;" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="98.0" layoutY="86.0" onMouseClicked="#btnBack" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Vector.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="121.0" fitWidth="425.0" layoutX="225.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tblOrder" layoutX="789.0" layoutY="52.0" prefHeight="708.0" prefWidth="1064.0">
+                          <columns>
+                            <TableColumn fx:id="colItemNo" prefWidth="134.66668701171875" text="ITEM NO" />
+                            <TableColumn fx:id="colItemName" prefWidth="293.666748046875" text="ITEM NAME" />
+                              <TableColumn fx:id="colQty" prefWidth="126.333251953125" text="QUANTITY" />
+                              <TableColumn fx:id="colDiscount" prefWidth="131.333251953125" text="DISCOUNT" />
+                              <TableColumn fx:id="colUnitPrice" prefWidth="186.0" text="UNIT PRICE" />
+                              <TableColumn fx:id="colTotal" prefWidth="192.6666259765625" text="TOTAL" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="txtPaidAmount" layoutX="1002.0" layoutY="809.0" prefHeight="30.0" prefWidth="252.0" />
+                        <Text fill="WHITE" layoutX="792.0" layoutY="832.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount Paid">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="792.0" layoutY="885.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Type">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <RadioButton fx:id="RadioCash" layoutX="1002.0" layoutY="869.0" mnemonicParsing="false" onAction="#RadioCashFunc" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="RadioCard" layoutX="1122.0" layoutY="870.0" mnemonicParsing="false" onAction="#RadioCardFunc" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RadioButton>
+                        <Text fill="WHITE" layoutX="1032.0" layoutY="886.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="1158.0" layoutY="887.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="795.0" layoutY="984.0" mnemonicParsing="false" onAction="#btnReset" prefHeight="38.0" prefWidth="124.0" text="Reset">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtSubTotal" editable="false" layoutX="1529.0" layoutY="806.0" prefHeight="30.0" prefWidth="323.0" />
+                        <Text fill="WHITE" layoutX="1383.0" layoutY="832.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub Total">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtDiscount1" editable="false" layoutX="1530.0" layoutY="861.0" prefHeight="30.0" prefWidth="323.0" />
+                        <Text fill="WHITE" layoutX="1384.0" layoutY="885.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtGrandTotal" editable="false" layoutX="1531.0" layoutY="914.0" prefHeight="30.0" prefWidth="323.0" />
+                        <Text fill="WHITE" layoutX="1385.0" layoutY="940.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grand Total">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="1307.0" layoutY="988.0" mnemonicParsing="false" onAction="#btnHold" prefHeight="38.0" prefWidth="135.0" text="Hold">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtProductId" layoutX="84.0" layoutY="217.0" prefHeight="39.0" prefWidth="527.0" promptText="Product ID Or SKU" />
+                        <Text fill="WHITE" layoutX="88.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="627.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnSearch" prefHeight="40.0" prefWidth="87.0" text="Search">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtName" editable="false" layoutX="178.0" layoutY="300.0" prefHeight="29.0" prefWidth="235.0" />
+                        <Text fill="WHITE" layoutX="87.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="87.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="84.0" layoutY="613.0" mnemonicParsing="false" onAction="#btnAddToCart" prefHeight="38.0" prefWidth="632.0" text="Add to Cart">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="85.0" layoutY="724.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Item From Cart">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtSize" editable="false" layoutX="179.0" layoutY="350.0" prefHeight="29.0" prefWidth="235.0" />
+                        <Text fill="WHITE" layoutX="87.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtPrice" editable="false" layoutX="179.0" layoutY="398.0" prefHeight="29.0" prefWidth="235.0" />
+                        <Text fill="WHITE" layoutX="87.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Qty">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtStock" editable="false" layoutX="179.0" layoutY="446.0" prefHeight="29.0" prefWidth="235.0" />
+                        <Text fill="WHITE" layoutX="88.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtDiscount" layoutX="180.0" layoutY="498.0" prefHeight="29.0" prefWidth="235.0" />
+                        <TextField fx:id="txtRemove" layoutX="85.0" layoutY="750.0" prefHeight="36.0" prefWidth="527.0" promptText="Product ID Or SKU" />
+                        <Button layoutX="628.0" layoutY="749.0" mnemonicParsing="false" onAction="#btnRemoveSearch" prefHeight="33.0" prefWidth="87.0" text="Search">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <Text fill="WHITE" layoutX="89.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtQuantity" layoutX="181.0" layoutY="547.0" prefHeight="29.0" prefWidth="235.0" />
+                        <Separator layoutX="34.0" layoutY="679.0" prefHeight="0.0" prefWidth="741.0" />
+                        <TableView fx:id="tblRemove" layoutX="85.0" layoutY="822.0" prefHeight="134.0" prefWidth="631.0">
+                          <columns>
+                            <TableColumn fx:id="colItemNo1" prefWidth="110.33332824707031" text="ITEM NO" />
+                            <TableColumn fx:id="colItemName1" prefWidth="119.66667175292969" text="ITEAM NAME" />
+                              <TableColumn fx:id="colQty1" prefWidth="117.0" text="QTY" />
+                              <TableColumn fx:id="colUnitPrice1" prefWidth="127.0" text="UNIT PRICE" />
+                              <TableColumn fx:id="colTotal1" prefWidth="157.3333740234375" text="TOTAL" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnRemoveId" disable="true" layoutX="85.0" layoutY="984.0" mnemonicParsing="false" onAction="#btnRemove" prefHeight="38.0" prefWidth="632.0" text="Remove">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtBalance" editable="false" layoutX="1002.0" layoutY="922.0" prefHeight="30.0" prefWidth="252.0" />
+                        <Text fill="WHITE" layoutX="792.0" layoutY="945.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="1484.0" layoutY="987.0" mnemonicParsing="false" onAction="#btnSubmit" prefHeight="38.0" prefWidth="370.0" text="Submit &amp; Print">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
 </BorderPane>
