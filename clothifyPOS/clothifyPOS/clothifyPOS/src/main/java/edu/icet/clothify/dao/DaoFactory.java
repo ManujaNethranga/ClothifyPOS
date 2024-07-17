@@ -21,6 +21,8 @@ public class DaoFactory {
             case SUBCATEGORY: return (T) new SubCategoryDaoImpl();
             case PRODUCT: return (T) new ProductDaoImpl();
             case STOCK: return  (T) new StockDaoImpl();
+            case ORDER : return (T) new OrderDaoImpl();
+            case ORDERDETAILS: return (T) new OrderDetailsDaoImpl();
         }
         return null;
     }

@@ -43,7 +43,7 @@
                               <Image url="@../img/logo.png" />
                            </image>
                         </ImageView>
-                        <TableView fx:id="tblOrder" layoutX="789.0" layoutY="52.0" prefHeight="708.0" prefWidth="1064.0">
+                        <TableView fx:id="tblOrder" layoutX="789.0" layoutY="80.0" prefHeight="680.0" prefWidth="1064.0">
                           <columns>
                             <TableColumn fx:id="colItemNo" prefWidth="134.66668701171875" text="ITEM NO" />
                             <TableColumn fx:id="colItemName" prefWidth="293.666748046875" text="ITEM NAME" />
@@ -201,6 +201,48 @@
                               <Font size="17.0" />
                            </font>
                         </Button>
+                        <Text fill="WHITE" layoutX="1032.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name :-">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="lblUserName" fill="WHITE" layoutX="1162.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="1380.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :-">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="lblDate" fill="WHITE" layoutX="1454.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2024-07-10">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="1606.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :-">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="lblTime" fill="WHITE" layoutX="1680.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00-00-00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Separator layoutX="1351.0" layoutY="36.0" orientation="VERTICAL" prefHeight="29.0" prefWidth="6.0" />
+                        <Separator layoutX="1580.0" layoutY="36.0" orientation="VERTICAL" prefHeight="29.0" prefWidth="6.0" />
+                        <Text fill="WHITE" layoutX="789.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID :-">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="lblOrderId" fill="WHITE" layoutX="890.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
                      </children>
                   </Pane>
                </content>

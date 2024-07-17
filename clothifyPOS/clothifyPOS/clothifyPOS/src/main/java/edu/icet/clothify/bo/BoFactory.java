@@ -21,6 +21,8 @@ public class BoFactory {
             case SUBCATEGORY: return (T) new SubCategoryBoImpl();
             case PRODUCT: return (T) new ProductBoImpl();
             case STOCK: return (T) new StockBoImpl();
+            case ORDER : return (T) new OrderBoImpl();
+            case ORDERDETAILS : return (T) new OrderDetailsBoImpl();
         }
         return null;
     }

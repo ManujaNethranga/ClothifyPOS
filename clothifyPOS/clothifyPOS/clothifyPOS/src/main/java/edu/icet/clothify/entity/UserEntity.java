@@ -26,6 +26,7 @@ public class UserEntity {
     private String type;
     private String regDate;
     private Boolean isActive;
+    private Boolean currentActive;
 
     @OneToMany(mappedBy = "")
     List<OrderEntity> list;

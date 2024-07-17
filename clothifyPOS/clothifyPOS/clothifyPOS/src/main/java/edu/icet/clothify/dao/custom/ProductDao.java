@@ -1,6 +1,7 @@
 package edu.icet.clothify.dao.custom;
 
 import edu.icet.clothify.dao.CrudDao;
+import edu.icet.clothify.dto.tableModels.CartTable;
 import edu.icet.clothify.entity.ProductEntity;
 import javafx.collections.ObservableList;
 
@@ -20,4 +21,7 @@ public interface ProductDao extends CrudDao<ProductEntity> {
     List<ProductEntity> getLowToHigh();
 
     List<ProductEntity> getHighToLow();
+
+
+    void updateStock(ProductEntity product);
 }

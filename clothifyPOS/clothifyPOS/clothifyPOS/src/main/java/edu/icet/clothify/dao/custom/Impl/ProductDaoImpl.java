@@ -1,6 +1,7 @@
 package edu.icet.clothify.dao.custom.Impl;
 
 import edu.icet.clothify.dao.custom.ProductDao;
+import edu.icet.clothify.dto.tableModels.CartTable;
 import edu.icet.clothify.entity.EmployeeEntity;
 import edu.icet.clothify.entity.ProductEntity;
 import edu.icet.clothify.entity.SupplierEntity;
@@ -8,6 +9,7 @@ import edu.icet.clothify.util.HibernateUtil;
 import javafx.collections.ObservableList;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import java.sql.ResultSet;
 import java.sql.SQLSyntaxErrorException;
@@ -137,4 +139,13 @@ public class ProductDaoImpl implements ProductDao {
         }
         return list;
     }
+
+    @Override
+    public void updateStock(ProductEntity product) {
+        Session session = HibernateUtil.getSingletonSession();
+        session.update(product);
+
+    }
+
+
 }

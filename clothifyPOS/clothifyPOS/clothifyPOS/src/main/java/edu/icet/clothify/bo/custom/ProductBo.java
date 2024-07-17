@@ -2,6 +2,7 @@ package edu.icet.clothify.bo.custom;
 
 import edu.icet.clothify.bo.SuperBo;
 import edu.icet.clothify.dto.Product;
+import edu.icet.clothify.dto.tableModels.CartTable;
 import edu.icet.clothify.entity.ProductEntity;
 import javafx.collections.ObservableList;
 
@@ -23,4 +24,6 @@ public interface ProductBo extends SuperBo {
     ObservableList<Product> getLowToHigh();
 
     ObservableList<Product> getHighToLow();
+
+    Boolean updateStock(ObservableList<CartTable> cartObList);
 }

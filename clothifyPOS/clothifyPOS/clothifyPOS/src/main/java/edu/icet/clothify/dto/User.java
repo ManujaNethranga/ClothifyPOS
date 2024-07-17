@@ -17,4 +17,5 @@ public class User {
     private String type;
     private String regDate;
     private Boolean isActive;
+    private Boolean currentActive;
 }

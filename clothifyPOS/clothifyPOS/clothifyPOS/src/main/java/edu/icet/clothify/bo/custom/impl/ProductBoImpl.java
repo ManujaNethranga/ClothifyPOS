@@ -8,6 +8,7 @@ import edu.icet.clothify.dao.custom.ProductDao;
 import edu.icet.clothify.dao.custom.SubCategoryDao;
 import edu.icet.clothify.dao.custom.SupplierDao;
 import edu.icet.clothify.dto.Product;
+import edu.icet.clothify.dto.tableModels.CartTable;
 import edu.icet.clothify.entity.ProductEntity;
 import edu.icet.clothify.entity.SupplierEntity;
 import edu.icet.clothify.util.DaoType;
@@ -88,4 +89,16 @@ public class ProductBoImpl implements ProductBo {
         });
         return obList;
     }
+
+    @Override
+    public Boolean updateStock(ObservableList<CartTable> cartObList) {
+        cartObList.forEach(element ->{
+            ProductEntity product = productDao.getById(element.getItemNo());
+            Integer stock = product.getStock() - element.getQty();
+            product.setStock(stock);
+            productDao.updateStock(product);
+        });
+        return true;
+    }
+
 }
