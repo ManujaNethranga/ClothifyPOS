@@ -199,3 +199,9 @@ YclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/controller/CurrentUserO
 WclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dao/custom/OrderDetailsDao.java,1\5\15529a3274957e1384853410c02ee1ca38ca6f61
 …
 UclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/bo/custom/OrderDetailsBo.java,9\5\95145d9ece086e0d052aad6431ee00211041731e
+‡
+WclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/OrderTable.java,e\2\e22d33b5214a7d41404310ab1b9e810c9fb34866
+Ž
+^clothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/OrderDetailsTable.java,c\6\c691ad3b631a18fe4d259e8d094248b78d934538
+Š
+ZclothifyPOS/clothifyPOS/src/main/java/edu/icet/clothify/dto/tableModels/AllOrderTable.java,f\4\f4e7e94d368e8628e69ab81724e6dc8b6ed87846

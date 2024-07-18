@@ -1,9 +1,11 @@
 package edu.icet.clothify.dao.custom.Impl;
 
 import edu.icet.clothify.dao.custom.OrderDao;
+import edu.icet.clothify.entity.EmployeeEntity;
 import edu.icet.clothify.entity.OrderEntity;
 import edu.icet.clothify.entity.ProductEntity;
 import edu.icet.clothify.util.HibernateUtil;
+import javafx.collections.ObservableList;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -58,5 +60,43 @@ public class OrderDaoImpl implements OrderDao {
             session.close();
         }
         return lastId;
+    }
+
+    @Override
+    public OrderEntity getById(String id) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        OrderEntity orderEntity = (OrderEntity) session.get(OrderEntity.class,id.toUpperCase());
+        session.getTransaction().commit();
+        session.close();
+        return orderEntity;
+    }
+
+    @Override
+    public List<OrderEntity> getAllOrders() {
+        Session session = HibernateUtil.getSession();
+        Transaction ts = null;
+        List<OrderEntity> list;
+        try{
+            ts = session.beginTransaction();
+            list = session.createQuery("SELECT a FROM OrderEntity a",OrderEntity.class).getResultList();
+            ts.commit();
+        }catch(Exception e){
+            if(ts!=null)ts.rollback();
+            throw e;
+        }finally {
+            session.close();
+        }
+        return list;
+    }
+
+    @Override
+    public Boolean update(OrderEntity byId) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        session.update(byId);
+        session.getTransaction().commit();
+        session.close();
+        return true;
     }
 }

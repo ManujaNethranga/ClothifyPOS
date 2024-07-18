@@ -9,6 +9,8 @@ import edu.icet.clothify.entity.OrderDetailsEntity;
 import edu.icet.clothify.entity.OrderEntity;
 import edu.icet.clothify.entity.UserEntity;
 import edu.icet.clothify.util.DaoType;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.modelmapper.ModelMapper;
 
 import java.util.List;
@@ -33,5 +35,25 @@ public class OrderBoImpl implements OrderBo {
         map.setList(list);
         map.setUserEntity(new ModelMapper().map(user, UserEntity.class));
         return orderDao.save(map);
+    }
+
+    @Override
+    public OrderEntity getById(String orderId) {
+        return orderDao.getById(orderId);
+    }
+
+    @Override
+    public ObservableList<OrderEntity> getAllOrders() {
+        List<OrderEntity> allOrders = orderDao.getAllOrders();
+        ObservableList<OrderEntity>obList = FXCollections.observableArrayList();
+        allOrders.forEach(element ->{
+            obList.add(element);
+        });
+        return obList;
+    }
+
+    @Override
+    public Boolean update(OrderEntity byId) {
+        return orderDao.update(byId);
     }
 }

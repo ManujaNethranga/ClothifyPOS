@@ -1,14 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="edu.icet.clothify.controller.SalesPageForm"
-            prefHeight="400.0" prefWidth="600.0">
 
+<BorderPane fx:id="SalesPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.clothify.controller.SalesPageForm">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="1080.0" prefWidth="1920.0">
+               <content>
+                  <Pane prefHeight="1080.0" prefWidth="1920.0">
+                     <children>
+                        <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bgImg.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="32.0" layoutY="45.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="51.0" style="-fx-background-color: #282828; -fx-background-radius: 100PX; -fx-border-color: WHITE; -fx-border-radius: 100PX;" textFill="WHITE">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="47.0" layoutY="58.0" onMouseClicked="#btnBack" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Vector.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="693.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGE SALES" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="65.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="35.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Order ID : " textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtOrderId" layoutX="227.0" layoutY="128.0" onKeyReleased="#OrderIdKeyFunction" prefHeight="32.0" prefWidth="280.0" promptText="Name" />
+                        <TableView fx:id="tblOrder" layoutX="34.0" layoutY="238.0" prefHeight="316.0" prefWidth="836.0">
+                           <columns>
+                              <TableColumn fx:id="orColId" prefWidth="107.66667175292969" text="Order ID" />
+                              <TableColumn fx:id="orColUserName" prefWidth="154.3333282470703" text="User Name" />
+                              <TableColumn fx:id="OrColPaymentType" prefWidth="125.66665649414062" text="Payment Type" />
+                              <TableColumn fx:id="orColDate" prefWidth="123.33334350585938" text="Date" />
+                              <TableColumn fx:id="orColisReturned" prefWidth="112.3333740234375" text="isReturned" />
+                              <TableColumn fx:id="orColEmail" prefWidth="215.6666259765625" text="Email" />
+                           </columns>
+                        </TableView>
+                        <Text fill="WHITE" layoutX="36.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter By Date  :" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <DatePicker fx:id="DatePicker" layoutX="225.0" layoutY="176.0" onAction="#DatePickerAction" prefHeight="32.0" prefWidth="280.0" />
+                        <TableView fx:id="tblOrderDetails" layoutX="35.0" layoutY="574.0" prefHeight="459.0" prefWidth="835.0">
+                           <columns>
+                              <TableColumn fx:id="deColOrderId" prefWidth="101.66667175292969" text="Order ID" />
+                              <TableColumn fx:id="deColItemId" prefWidth="112.33332824707031" text="Item ID" />
+                              <TableColumn fx:id="deColItemName" prefWidth="146.66665649414062" text="item Name" />
+                              <TableColumn fx:id="deColPrice" prefWidth="123.6666259765625" text="Unit Price" />
+                              <TableColumn fx:id="deColQuantity" prefWidth="101.66668701171875" text="Quantity" />
+                              <TableColumn fx:id="deColDiscount" prefWidth="115.0" text="Discount" />
+                              <TableColumn fx:id="deColTotal" prefWidth="131.6666259765625" text="Total" />
+                           </columns>
+                        </TableView>
+                        <TableView fx:id="tableAllDetails" layoutX="899.0" layoutY="237.0" prefHeight="795.0" prefWidth="973.0">
+                           <columns>
+                              <TableColumn fx:id="allColOrderId" prefWidth="152.0" text="Order ID" />
+                              <TableColumn fx:id="allColUserName" prefWidth="180.6666259765625" text="User Name" />
+                              <TableColumn fx:id="allColPaymentType" prefWidth="150.3333740234375" text="PaymentType" />
+                              <TableColumn fx:id="allColDate" prefWidth="136.3333740234375" text="Date" />
+                              <TableColumn fx:id="allColisReturned" prefWidth="136.0" text="isReturned" />
+                              <TableColumn fx:id="allColEmail" prefWidth="218.333251953125" text="Email" />
+                           </columns>
+                        </TableView>
+                        <Text fill="WHITE" layoutX="901.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter By :" textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ComboBox fx:id="cmbFilter" layoutX="1091.0" layoutY="128.0" onAction="#cmbFilterAction" prefHeight="34.0" prefWidth="782.0" />
+                        <Text fill="WHITE" layoutX="901.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Order : " textAlignment="CENTER">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtReturnOrderId" layoutX="1091.0" layoutY="178.0" onKeyReleased="#ReturnIdKeyFunction" prefHeight="32.0" prefWidth="276.0" promptText="Order ID" />
+                        <Button layoutX="1383.0" layoutY="178.0" minHeight="32.0" mnemonicParsing="false" onAction="#btnSubmit" prefHeight="32.0" prefWidth="92.0" text="Submit" />
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
 </BorderPane>

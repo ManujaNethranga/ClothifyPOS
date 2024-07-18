@@ -24,7 +24,10 @@ public class AdminDashboardForm {
         AdminDashboardPane.setCenter(parent);
     }
 
-    public void btnSales(ActionEvent actionEvent) {
+    public void btnSales(ActionEvent actionEvent) throws IOException {
+        Parent parent = new FXMLLoader(getClass().getResource("/view/SalesPage.fxml")).load();
+        AdminDashboardPane.getChildren().clear();
+        AdminDashboardPane.setCenter(parent);
     }
 
     public void btnReports(ActionEvent actionEvent) throws IOException {

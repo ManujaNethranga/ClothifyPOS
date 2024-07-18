@@ -123,13 +123,13 @@
                               <Font size="17.0" />
                            </font>
                         </Button>
-                        <TextField fx:id="txtName" editable="false" layoutX="178.0" layoutY="300.0" prefHeight="29.0" prefWidth="235.0" />
-                        <Text fill="WHITE" layoutX="87.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+                        <TextField fx:id="txtName" editable="false" layoutX="178.0" layoutY="333.0" prefHeight="29.0" prefWidth="278.0" />
+                        <Text fill="WHITE" layoutX="87.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="87.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size">
+                        <Text fill="WHITE" layoutX="87.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -144,37 +144,37 @@
                               <Font size="23.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="txtSize" editable="false" layoutX="179.0" layoutY="350.0" prefHeight="29.0" prefWidth="235.0" />
-                        <Text fill="WHITE" layoutX="87.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+                        <TextField fx:id="txtSize" editable="false" layoutX="179.0" layoutY="372.0" prefHeight="29.0" prefWidth="276.0" />
+                        <Text fill="WHITE" layoutX="87.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="txtPrice" editable="false" layoutX="179.0" layoutY="398.0" prefHeight="29.0" prefWidth="235.0" />
-                        <Text fill="WHITE" layoutX="87.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Qty">
+                        <TextField fx:id="txtPrice" editable="false" layoutX="179.0" layoutY="411.0" prefHeight="29.0" prefWidth="276.0" />
+                        <Text fill="WHITE" layoutX="87.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Qty">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="txtStock" editable="false" layoutX="179.0" layoutY="446.0" prefHeight="29.0" prefWidth="235.0" />
-                        <Text fill="WHITE" layoutX="88.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount">
+                        <TextField fx:id="txtStock" editable="false" layoutX="179.0" layoutY="450.0" prefHeight="29.0" prefWidth="276.0" />
+                        <Text fill="WHITE" layoutX="88.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="txtDiscount" layoutX="180.0" layoutY="498.0" prefHeight="29.0" prefWidth="235.0" />
+                        <TextField fx:id="txtDiscount" layoutX="180.0" layoutY="489.0" prefHeight="29.0" prefWidth="275.0" />
                         <TextField fx:id="txtRemove" layoutX="85.0" layoutY="750.0" prefHeight="36.0" prefWidth="527.0" promptText="Product ID Or SKU" />
                         <Button layoutX="628.0" layoutY="749.0" mnemonicParsing="false" onAction="#btnRemoveSearch" prefHeight="33.0" prefWidth="87.0" text="Search">
                            <font>
                               <Font size="17.0" />
                            </font>
                         </Button>
-                        <Text fill="WHITE" layoutX="89.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
+                        <Text fill="WHITE" layoutX="89.0" layoutY="548.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Text>
-                        <TextField fx:id="txtQuantity" layoutX="181.0" layoutY="547.0" prefHeight="29.0" prefWidth="235.0" />
+                        <TextField fx:id="txtQuantity" layoutX="181.0" layoutY="529.0" prefHeight="29.0" prefWidth="275.0" />
                         <Separator layoutX="34.0" layoutY="679.0" prefHeight="0.0" prefWidth="741.0" />
                         <TableView fx:id="tblRemove" layoutX="85.0" layoutY="822.0" prefHeight="134.0" prefWidth="631.0">
                           <columns>
@@ -241,6 +241,12 @@
                         <Text fx:id="lblOrderId" fill="WHITE" layoutX="890.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0">
                            <font>
                               <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txtEmail" layoutX="178.0" layoutY="293.0" prefHeight="29.0" prefWidth="278.0" />
+                        <Text fill="WHITE" layoutX="87.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                           <font>
+                              <Font size="18.0" />
                            </font>
                         </Text>
                      </children>

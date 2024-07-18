@@ -8,6 +8,8 @@ import edu.icet.clothify.entity.OrderDetailsEntity;
 import edu.icet.clothify.util.DaoType;
 import org.modelmapper.ModelMapper;
 
+import java.util.List;
+
 public class OrderDetailsBoImpl implements OrderDetailsBo {
 
     OrderDetailsDao orderDetailsDao = DaoFactory.getInstance().getDao(DaoType.ORDERDETAILS);
@@ -15,5 +17,10 @@ public class OrderDetailsBoImpl implements OrderDetailsBo {
     @Override
     public void save(OrderDetails orderDetails) {
         orderDetailsDao.save(new ModelMapper().map(orderDetails, OrderDetailsEntity.class));
+    }
+
+    @Override
+    public List<OrderDetailsEntity> getAllOrderDetails() {
+        return orderDetailsDao.getAllDetails();
     }
 }

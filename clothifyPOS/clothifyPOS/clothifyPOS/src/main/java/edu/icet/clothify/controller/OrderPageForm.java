@@ -77,6 +77,7 @@ public class OrderPageForm implements Initializable {
     public Text lblDate;
     public Text lblTime;
     public Text lblOrderId;
+    public TextField txtEmail;
 
     ProductBo productBo = BoFactory.getInstance().getBo(BoType.PRODUCT);
     OrderBo orderBo = BoFactory.getInstance().getBo(BoType.ORDER);
@@ -285,8 +286,8 @@ public class OrderPageForm implements Initializable {
         List<OrderDetailsEntity> list = new ArrayList<>();
         Order order = new Order();
         order.setId(lblOrderId.getText());
-        order.setName("Annonymous");
-        order.setEmail(user.getEmail());
+        order.setName(user.getUserName());
+        order.setEmail(txtEmail.getText());
         if(RadioCash.isSelected()){
             order.setPaymentType("Cash");
         }else{
@@ -327,6 +328,7 @@ public class OrderPageForm implements Initializable {
                 txtGrandTotal.clear();
                 RadioCash.setSelected(false);
                 RadioCard.setSelected(false);
+                txtEmail.clear();
             }
 
         }
