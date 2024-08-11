@@ -41,4 +41,23 @@ public class UserBoImpl implements UserBo {
         });
         return userList;
     }
+
+    @Override
+    public UserEntity getIdFromEmail(String email) {
+        int count=0;
+        UserEntity entity=null;
+        List<UserEntity> list = userDao.getAllUserDetails();
+        while(count<list.size()){
+            if(list.get(count).getEmail().equals(email)){
+                entity = list.get(count);
+            }
+            count++;
+        }
+        return entity;
+    }
+
+    @Override
+    public Boolean update(UserEntity entity) {
+        return userDao.update(entity);
+    }
 }

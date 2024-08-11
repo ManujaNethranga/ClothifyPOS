@@ -7,6 +7,7 @@ import edu.icet.clothify.entity.UserEntity;
 import edu.icet.clothify.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 
 import java.sql.ResultSet;
 import java.sql.SQLSyntaxErrorException;
@@ -81,4 +82,16 @@ public class UserDaoImpl implements UserDao {
         }
         return list;
     }
+
+    @Override
+    public Boolean update(UserEntity entity) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        session.update(entity);
+        session.getTransaction().commit();
+        session.close();
+        return true;
+    }
+
+
 }

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -14,7 +13,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-
 
 <BorderPane fx:id="SalesPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.clothify.controller.SalesPageForm">
    <center>
@@ -87,12 +85,6 @@
                               <TableColumn fx:id="allColEmail" prefWidth="218.333251953125" text="Email" />
                            </columns>
                         </TableView>
-                        <Text fill="WHITE" layoutX="901.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter By :" textAlignment="CENTER">
-                           <font>
-                              <Font name="Calibri Bold" size="24.0" />
-                           </font>
-                        </Text>
-                        <ComboBox fx:id="cmbFilter" layoutX="1091.0" layoutY="128.0" onAction="#cmbFilterAction" prefHeight="34.0" prefWidth="782.0" />
                         <Text fill="WHITE" layoutX="901.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Order : " textAlignment="CENTER">
                            <font>
                               <Font name="Calibri Bold" size="24.0" />

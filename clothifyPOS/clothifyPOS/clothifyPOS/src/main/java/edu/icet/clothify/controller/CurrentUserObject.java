@@ -12,7 +12,7 @@ import lombok.ToString;
 @ToString
 public class CurrentUserObject {
 
-    CurrentUserObject(){}
+    private CurrentUserObject(){}
 
     private User user;
 

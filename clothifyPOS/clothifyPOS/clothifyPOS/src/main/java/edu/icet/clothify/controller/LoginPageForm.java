@@ -38,7 +38,9 @@ public class LoginPageForm implements Initializable {
     }
 
     public void LoginForgotPass(MouseEvent mouseEvent) throws IOException {
-
+        Parent parent = new FXMLLoader(getClass().getResource("/view/ForgotPassword.fxml")).load();
+        LoginPageBorderPane.getChildren().clear();
+        LoginPageBorderPane.setCenter(parent);
     }
 
     public void LoginBtn(ActionEvent actionEvent) throws IOException, NoSuchAlgorithmException {
@@ -56,6 +58,7 @@ public class LoginPageForm implements Initializable {
                     isActive = user1.getIsActive();
                     isCorrect = true;
                     CurrentUserObject.getInstance().setUser(user1);
+
                 }
                 count++;
             }

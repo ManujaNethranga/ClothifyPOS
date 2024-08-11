@@ -44,7 +44,7 @@
                         </Group>
                         <VBox layoutX="64.0" layoutY="229.0" prefHeight="810.0" prefWidth="231.0" spacing="40.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#BtnEmployee" prefHeight="60.0" prefWidth="225.0" style="-fx-background-radius: 38px; -fx-background-color: #5B5B5B;" text="EMPLOYEE" textFill="WHITE">
+                              <Button fx:id="btnEmployee" mnemonicParsing="false" onAction="#BtnEmployee" prefHeight="60.0" prefWidth="225.0" style="-fx-background-radius: 38px; -fx-background-color: #5B5B5B;" text="EMPLOYEE" textFill="WHITE">
                                  <font>
                                     <Font size="20.0" />
                                  </font>

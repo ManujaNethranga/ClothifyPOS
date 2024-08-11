@@ -13,4 +13,7 @@ public interface UserDao  extends CrudDao<UserEntity> {
     String lastUserId();
 
     List<UserEntity> getAllUserDetails();
+
+
+    Boolean update(UserEntity entity);
 }
